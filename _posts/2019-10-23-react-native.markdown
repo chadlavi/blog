@@ -9,7 +9,7 @@ tags:
 - development 
 ---
 
-![puppy pic](/images/puppy.jpg)
+![puppy pic](/blog/images/puppy.jpg)
 
 - no `yarn link`
 - every major iOS update === breaking change in your workflow
