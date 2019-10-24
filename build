@@ -1,0 +1,3 @@
+#!/bin/bash
+
+jekyll build && cp -R _site docs
