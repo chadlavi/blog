@@ -15,7 +15,7 @@ layout: default
       {%- for post in site.posts -%}
       <li>
         <h3 class="post-link">
-          <a href="{{ post.url | relative_url }}">
+          <a href="{{site.baseurl}}{{ post.url}}">
             {{ post.title | escape }}
           </a>
         </h3>
