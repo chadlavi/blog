@@ -125,7 +125,7 @@ a {
   &.tag {
     display: inline-block;
     padding: 3px 9px;
-    margin-right: 3px;
+    margin: 0 3px 7px 0;
     color: white;
     background: $brand-color;
     border-radius: 3px;
@@ -195,7 +195,7 @@ pre {
   padding-left: $spacing-unit;
   @extend %clearfix;
 
-  @include media-query($on-laptop) {
+  @include under($tablet) {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
     max-width:         calc(#{$content-width} - (#{$spacing-unit}));
     padding-right: $spacing-unit / 2;
