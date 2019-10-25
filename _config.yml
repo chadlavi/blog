@@ -1,7 +1,9 @@
 title: Chad Lavimoniere
 author: Chad Lavimoniere
 description: >-
-  Design engineer, library maintainer.
+  Design engineer, library maintainer. Formerly freelance, currently design
+  system and frontend component library maintainer at
+  <a href="https://casebook.net" target="_blank">Casebook</a>.
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: chadlavimoniere
