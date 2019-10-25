@@ -9,9 +9,7 @@ tags:
 - development 
 ---
 
-![puppy pic](/blog/images/puppy.jpg)
-
 - no `yarn link`
 - every major iOS update === breaking change in your workflow
-  - here's an example of the kind of shit you have to do: https://www.bram.us/2019/09/04/react-native-could-not-find-iphone-x-simulator/
+  - here's an example of the kind of shit you have to do: [https://www.bram.us/2019/09/04/react-native-could-not-find-iphone-x-simulator/](https://www.bram.us/2019/09/04/react-native-could-not-find-iphone-x-simulator/)
 - extremely long build times => lots of wasted time, very long iterative loops
