@@ -9,5 +9,5 @@
 
   {%- if site.twitter_username -%}<li><a target="_blank" href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}"><svg class="svg-icon"><use xlink:href="{{site.baseurl}}/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">{{ site.twitter_username| escape }}</span></a></li>{%- endif -%}
   
-  {%- if site.rss -%}<li><a target="_blank" href="{{site.baseurl}}feed.xml"><svg class="svg-icon"><use xlink:href="{{site.baseurl}}/assets/minima-social-icons.svg#rss"></use></svg> <span>rss</span></a></li>{%- endif -%}
+  {%- if site.rss -%}<li><a target="_blank" href="{{site.baseurl}}/feed.xml"><svg class="svg-icon"><use xlink:href="{{site.baseurl}}/assets/minima-social-icons.svg#rss"></use></svg> <span>rss</span></a></li>{%- endif -%}
 </ul>

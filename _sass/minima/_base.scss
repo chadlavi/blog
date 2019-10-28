@@ -100,7 +100,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
 
-
+span#byline {
+  display: none;
+}
 
 /**
  * Links
@@ -133,8 +135,15 @@ a {
       text-decoration: none;
     }
   }
-}
 
+  &:not([href^='#']):not([href^='/']):after, &[target="_blank"]::after {
+    font-family: 'Font Awesome 5 Free';
+    content: " \f35d";
+    font-size: 70%;
+    vertical-align: middle;
+    margin-left: 3px;
+  }
+}
 
 /**
  * Blockquotes
