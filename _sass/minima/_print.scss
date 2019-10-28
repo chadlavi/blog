@@ -1,0 +1,44 @@
+@media print {
+  a {
+    color: inherit !important;
+    &:not(.tag):not([rel="author"]) {
+      text-decoration: underline !important;
+      &::after {
+        content: " (" attr(href) ") " !important;
+        font-family: inherit !important;
+        font-size: inherit !important;
+        vertical-align: unset !important;
+      }
+    }
+    &.tag {
+      color: inherit;
+      padding: inherit;
+      background: none;
+      font-size: inherit;
+      margin: none;
+      &:not(:last-child):after {
+        content: ",";
+      }
+    }
+  }
+  h1 {
+    font-size: $base-font-size * 1.5 !important;
+  }
+  span#byline {
+    display: inline;
+  }
+  .post-meta {
+    color: inherit;
+    font-size: inherit;
+  }
+  .tags .title {
+    display: inline;
+    text-transform: none;
+    &:after {
+      content: ":",
+    }
+  }
+  .site-header, .site-footer {
+    display: none;
+  }
+}
