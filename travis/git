@@ -2,8 +2,9 @@
 
 ./build
 
+git config credential.helper 'cache --timeout=120'
 git config --global user.name ${GITHUB_USER}
 git config --global user.email ${GITHUB_EMAIL}
 git add docs
 git commit -m "Lastest site built on successful travis build ${TRAVIS_BUILD_NUMBER} auto-pushed to github"
-git push "https://${GITHUB_USER}:${GITHUB_PW}@${REPO}" master && echo "pushed"
+git push -q "https://${GITHUB_TOKEN}@${REPO}" master && echo "pushed"
