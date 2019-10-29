@@ -1,4 +1,8 @@
 @media print {
+  div.wrapper {
+    max-width: 100%;
+    padding: 0;
+  }
   a {
     color: inherit !important;
     &:not(.tag):not([rel="author"]) {
@@ -21,8 +25,16 @@
       }
     }
   }
+  blockquote {
+    color: inherit;
+    border-left: 4px solid;
+  }
   h1 {
     font-size: $base-font-size * 1.5 !important;
+  }
+  pre, code {
+    border: 1px solid;
+    background: none;
   }
   span#byline {
     display: inline;

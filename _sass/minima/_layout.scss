@@ -126,10 +126,13 @@
 .site-footer {
   padding: #{$spacing-unit * 2} 0 0 0;
   margin-top: #{$spacing-unit * 2};
-  background: black;
-  color: white;
+  background: $black;
+  color: $white;
   a, a:visited {
-    color: $brand-color;
+    color: $brand-color-on-black;
+    &:focus {
+      box-shadow: 0 0 0 2px white, 0 0 0 5px $brand-color-on-black;
+    }
   }
 }
 
@@ -222,7 +225,7 @@
 }
 
 .post-link {
-  @include relative-font-size(1.5);
+  @include relative-font-size(1.2);
   margin-bottom: 0;
 }
 
@@ -272,5 +275,8 @@
     @include under($tablet) {
       @include relative-font-size(1.125);
     }
+  }
+  p {
+    line-height: 1.75;
   }
 }
