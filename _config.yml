@@ -36,5 +36,3 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - build
-  - travis/
