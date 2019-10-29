@@ -4,7 +4,7 @@ before_install: gem update bundler
 install:
   - bundle install
 script:
-  - "./build"
+  - "jekyll build"
 branches:
   only:
   - master
@@ -13,7 +13,7 @@ deploy:
   github_token: $GITHUB_TOKEN
   provider: pages
   skip_cleanup: true
+  local_dir: _site/
   keep_history: true
-  target_branch: master
   on:
     branch: master
