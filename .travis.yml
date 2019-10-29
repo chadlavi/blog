@@ -4,8 +4,6 @@ before_install: gem update bundler
 install:
   - bundle install
 script:
-  - "./build"
-after_success:
   - "./travis/git"
 github_token: $GITHUB_TOKEN
 branches:
