@@ -4,9 +4,15 @@ before_install: gem update bundler
 install:
   - bundle install
 script:
-  - "./travis/git"
-github_token: $GITHUB_TOKEN
+  - "./build"
 branches:
   only:
   - master
 sudo: false
+deploy:
+  github_token: $GITHUB_TOKEN
+  provider: pages
+  skip_cleanup: true
+  local_dir: docs/
+  on:
+    branch: master
