@@ -5,10 +5,9 @@ install:
   - bundle install
 script:
   - "./build"
+after_success:
+  - "./travis/git"
 github_token: $GITHUB_TOKEN
-keep_history: true
-skip_cleanup: true
-provider: pages
 branches:
   only:
   - master
