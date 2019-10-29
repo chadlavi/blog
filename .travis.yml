@@ -4,7 +4,7 @@ before_install: gem update bundler
 install:
   - bundle install
 script:
-  - "./build"
+  - "./travis/git"
 branches:
   only:
   - master

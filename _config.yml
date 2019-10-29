@@ -37,3 +37,4 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - build
+  - travis/

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+./build
+
+git config --global user.name $GITHUB_USER
+git config --global user.email $GITHUB_EMAIL
+git add -A
+git status
+git commit -m "Lastest site built on successful travis build $TRAVIS_BUILD_NUMBER auto-pushed to github"
+git push $REPO master:master
