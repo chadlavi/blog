@@ -3070,6 +3070,8 @@ table td { border: 1px solid #dbdbdb; }
 
 .post-content p { line-height: 1.75; }
 
+.post-content li { margin-bottom: 8px; }
+
 /** Syntax highlighting styles */
 .highlight { background: #fff; }
 
