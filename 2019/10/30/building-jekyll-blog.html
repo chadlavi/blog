@@ -3,20 +3,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Building a markdown-based blog with Jekyll and github pages | Chad Lavimoniere</title>
+<title>Turning github into a CMS | Chad Lavimoniere</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Building a markdown-based blog with Jekyll and github pages" />
+<meta property="og:title" content="Turning github into a CMS" />
 <meta name="author" content="Chad Lavimoniere" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="be sure to cache correctly! I ended up doing this: cache: directories: - /home/travis/.rvm/ It reduced my total build times from an average of 3 minutes 20 seconds to an average of 45 seconds, or about four times faster. The last build before the change had an install time of 153.21 seconds; the first build after the change had an install time of 0.38 seconds. That’s roughly 400 times faster. You can see the full build log for this blog at https://travis-ci.org/chadlavi/blog/builds" />
-<meta property="og:description" content="be sure to cache correctly! I ended up doing this: cache: directories: - /home/travis/.rvm/ It reduced my total build times from an average of 3 minutes 20 seconds to an average of 45 seconds, or about four times faster. The last build before the change had an install time of 153.21 seconds; the first build after the change had an install time of 0.38 seconds. That’s roughly 400 times faster. You can see the full build log for this blog at https://travis-ci.org/chadlavi/blog/builds" />
+<meta name="description" content="I originally created this blog as an excuse to experiment with the JAM stack, but I quickly realized I didn’t really need any CRUD functionality; it’s just a blog, no forms or uploads to speak of. The initial code for that never made it to a git repo, and frankly didn’t get too far past an npx create-react-app." />
+<meta property="og:description" content="I originally created this blog as an excuse to experiment with the JAM stack, but I quickly realized I didn’t really need any CRUD functionality; it’s just a blog, no forms or uploads to speak of. The initial code for that never made it to a git repo, and frankly didn’t get too far past an npx create-react-app." />
 <link rel="canonical" href="/blog/2019/10/30/building-jekyll-blog.html" />
 <meta property="og:url" content="/blog/2019/10/30/building-jekyll-blog.html" />
 <meta property="og:site_name" content="Chad Lavimoniere" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-10-30T00:00:00+00:00" />
 <script type="application/ld+json">
-{"description":"be sure to cache correctly! I ended up doing this: cache: directories: - /home/travis/.rvm/ It reduced my total build times from an average of 3 minutes 20 seconds to an average of 45 seconds, or about four times faster. The last build before the change had an install time of 153.21 seconds; the first build after the change had an install time of 0.38 seconds. That’s roughly 400 times faster. You can see the full build log for this blog at https://travis-ci.org/chadlavi/blog/builds","@type":"BlogPosting","headline":"Building a markdown-based blog with Jekyll and github pages","datePublished":"2019-10-30T00:00:00+00:00","url":"/blog/2019/10/30/building-jekyll-blog.html","dateModified":"2019-10-30T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/blog/2019/10/30/building-jekyll-blog.html"},"author":{"@type":"Person","name":"Chad Lavimoniere"},"@context":"https://schema.org"}</script>
+{"description":"I originally created this blog as an excuse to experiment with the JAM stack, but I quickly realized I didn’t really need any CRUD functionality; it’s just a blog, no forms or uploads to speak of. The initial code for that never made it to a git repo, and frankly didn’t get too far past an npx create-react-app.","@type":"BlogPosting","headline":"Turning github into a CMS","datePublished":"2019-10-30T00:00:00+00:00","url":"/blog/2019/10/30/building-jekyll-blog.html","dateModified":"2019-10-30T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/blog/2019/10/30/building-jekyll-blog.html"},"author":{"@type":"Person","name":"Chad Lavimoniere"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/blog/feed.xml" title="Chad Lavimoniere" /></head>
 <body><header class="site-header" role="banner">
@@ -28,7 +28,7 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Building a markdown-based blog with Jekyll and github pages</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Turning github into a CMS</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="2019-10-30T00:00:00+00:00" itemprop="datePublished">Oct 30, 2019
       </time><span id="byline"> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Chad Lavimoniere</span></span></span>
@@ -37,23 +37,55 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <ul>
-  <li>
-    <p>be sure to cache correctly! I ended up doing <a href="https://docs.travis-ci.com/user/caching#cache-rvm-ruby-version-for-non-ruby-projects" target="_blank">this</a>:</p>
+    <p>I originally created this blog as an excuse to experiment with <a href="https://jamstack.org/" target="_blank">the JAM stack</a>, but I quickly realized I didn’t really need any CRUD functionality; it’s just a blog, no forms or uploads to speak of. The initial code for that never made it to a git repo, and frankly didn’t get too far past an <code class="highlighter-rouge">npx create-react-app</code>.</p>
 
-    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">cache</span><span class="pi">:</span>
+<p>I still wanted to create a fast, responsive, accessible site that’s templatized and just needs markdown changes to create new stuff. My <a href="https://github.com/chadlavi/chadlavimoniere.com" target="_blank">old blog</a> was an experiment in using the LAMP stack to do something sort of like this, but it was really cumbersome; I ended up storing the markdown content for the posts in a MySQL database, so it was still fairly technologically intensive to update.</p>
+
+<h2 id="jekyll--github-pages">Jekyll + GitHub Pages</h2>
+
+<p>That’s when I realized that Jekyll and GitHub Pages would probably be a good fit for this. I’d used both at work (Jekyll for an abortive first-stab at a company-wide branding guide site; GitHub Pages to host the documentation for my component libraries), but had always used them with a workflow like this:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>develop stuff locally
+  |
+  V
+do a manual build locally
+  |
+  V
+push build artifacts to GitHub Pages
+</code></pre></div></div>
+
+<p>It was somewhat convenient. Jekyll let me write content in markdown, which made it way more portable and way more approachable to non-tech folks. GitHub Pages is free, pretty much infrastructure-less, and well-documented. But the need to manually build then push build artifacts to a hosting environment seemed like a rough edge I could sand off.</p>
+
+<h2 id="adding-travis-ci">Adding Travis CI</h2>
+
+<p>Never do something yourself that a robot can do for you. The steps to build and deploy a Jekyll site on GitHub Pages were repetitive, so I went looking for a robot who could do it for me.</p>
+
+<p>I went with Travis CI because it has great integration into GitHub, and is also free and relatively infrastructure-less.</p>
+
+<p>The basic setup was pretty simple: I connected my Travis CI and GitHub accounts, added my GitHub access token to Travis CI’s secrets manager, and created a <code class="highlighter-rouge">.travis.yml</code> file.</p>
+
+<h2 id="caching">Caching</h2>
+
+<p>Probably the most important improvement I made in the whole process was to set up Travis CI to cache correctly! I ended up doing <a href="https://docs.travis-ci.com/user/caching#cache-rvm-ruby-version-for-non-ruby-projects" target="_blank">this</a>:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">cache</span><span class="pi">:</span>
   <span class="na">directories</span><span class="pi">:</span>
     <span class="pi">-</span> <span class="s">/home/travis/.rvm/</span>
-</code></pre></div>    </div>
-    <p>It reduced my total build times from an average of 3 minutes 20 seconds to an average of 45 seconds, or about four times faster.</p>
+</code></pre></div></div>
 
-    <p><img src="/blog/images/faster-builds.png" alt="screenshot showing two markedly different build times; 3 minutes and 28 seconds before this change, versus 46 seconds after." /></p>
+<p>It reduced my total build times from an average of 3 minutes 20 seconds to an average of 45 seconds, or about four times faster.</p>
 
-    <p>The <a href="https://travis-ci.org/chadlavi/blog/builds/605132241" target="_blank">last  build before the change</a> had an install time of 153.21 seconds; the <a href="https://travis-ci.org/chadlavi/blog/builds/605134945" target="_blank">first build after the change</a> had an install time of <em>0.38 seconds</em>. That’s roughly 400 times faster.</p>
+<p><img src="/blog/images/faster-builds.png" alt="screenshot showing two markedly different build times; 3 minutes and 28 seconds before this change, versus 46 seconds after." /></p>
 
-    <p>You can see the full build log for this blog at <a href="https://travis-ci.org/chadlavi/blog/builds" target="_blank">https://travis-ci.org/chadlavi/blog/builds</a></p>
-  </li>
-</ul>
+<p>The <a href="https://travis-ci.org/chadlavi/blog/builds/605132241" target="_blank">last  build before the change</a> had an install time of 153.21 seconds; the <a href="https://travis-ci.org/chadlavi/blog/builds/605134945" target="_blank">first build after the change</a> had an install time of <em>0.38 seconds</em>. That’s roughly 400 times faster.</p>
+
+<p>You can see the full build log for this blog at <a href="https://travis-ci.org/chadlavi/blog/builds" target="_blank">https://travis-ci.org/chadlavi/blog/builds</a></p>
+
+<h2 id="new-workflow">New workflow</h2>
+
+<p>I actually completely composed this blog post (and even added the image above) <em>directly in the text editor on GitHub</em>. With Travis CI set up to automatically run builds whenever new changes are committed on the master branch of this repository, I can basically treat the <em>Create new file</em> text input like it’s a markdown-specific CMS.</p>
+
+<p>I’m anticipating that this is going to mean a lot more freedom in how I can add new blog posts or edit existing ones in the future; the only thing I can’t do directly from GitHub is preview changes accurately, or change more than one file per commit. This will probably mean sort of a separation of concerns: markdown I can compose and upload from anywhere, but template or infrastructure changes will still need a more traditional dev setup.</p>
 
   </div><div id="tags" class="post-meta tags">
   <p class="title">Topics</p>

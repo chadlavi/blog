@@ -1,20 +1,52 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2019-10-30T19:59:45+00:00</updated><id>/blog/feed.xml</id><title type="html">Chad Lavimoniere</title><subtitle>Design engineer, library maintainer. Formerly freelance, currently design system and frontend component library maintainer at &lt;a href=&quot;https://casebook.net&quot; target=&quot;_blank&quot;&gt;Casebook&lt;/a&gt;.</subtitle><author><name>Chad Lavimoniere</name></author><entry><title type="html">Building a markdown-based blog with Jekyll and github pages</title><link href="/blog/2019/10/30/building-jekyll-blog.html" rel="alternate" type="text/html" title="Building a markdown-based blog with Jekyll and github pages" /><published>2019-10-30T00:00:00+00:00</published><updated>2019-10-30T00:00:00+00:00</updated><id>/blog/2019/10/30/building-jekyll-blog</id><content type="html" xml:base="/blog/2019/10/30/building-jekyll-blog.html">&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;be sure to cache correctly! I ended up doing &lt;a href=&quot;https://docs.travis-ci.com/user/caching#cache-rvm-ruby-version-for-non-ruby-projects&quot; target=&quot;_blank&quot;&gt;this&lt;/a&gt;:&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="/blog/" rel="alternate" type="text/html" /><updated>2019-10-30T20:34:18+00:00</updated><id>/blog/feed.xml</id><title type="html">Chad Lavimoniere</title><subtitle>Design engineer, library maintainer. Formerly freelance, currently design system and frontend component library maintainer at &lt;a href=&quot;https://casebook.net&quot; target=&quot;_blank&quot;&gt;Casebook&lt;/a&gt;.</subtitle><author><name>Chad Lavimoniere</name></author><entry><title type="html">Turning github into a CMS</title><link href="/blog/2019/10/30/building-jekyll-blog.html" rel="alternate" type="text/html" title="Turning github into a CMS" /><published>2019-10-30T00:00:00+00:00</published><updated>2019-10-30T00:00:00+00:00</updated><id>/blog/2019/10/30/building-jekyll-blog</id><content type="html" xml:base="/blog/2019/10/30/building-jekyll-blog.html">&lt;p&gt;I originally created this blog as an excuse to experiment with &lt;a href=&quot;https://jamstack.org/&quot; target=&quot;_blank&quot;&gt;the JAM stack&lt;/a&gt;, but I quickly realized I didn’t really need any CRUD functionality; it’s just a blog, no forms or uploads to speak of. The initial code for that never made it to a git repo, and frankly didn’t get too far past an &lt;code class=&quot;highlighter-rouge&quot;&gt;npx create-react-app&lt;/code&gt;.&lt;/p&gt;
 
-    &lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;cache&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+&lt;p&gt;I still wanted to create a fast, responsive, accessible site that’s templatized and just needs markdown changes to create new stuff. My &lt;a href=&quot;https://github.com/chadlavi/chadlavimoniere.com&quot; target=&quot;_blank&quot;&gt;old blog&lt;/a&gt; was an experiment in using the LAMP stack to do something sort of like this, but it was really cumbersome; I ended up storing the markdown content for the posts in a MySQL database, so it was still fairly technologically intensive to update.&lt;/p&gt;
+
+&lt;h2 id=&quot;jekyll--github-pages&quot;&gt;Jekyll + GitHub Pages&lt;/h2&gt;
+
+&lt;p&gt;That’s when I realized that Jekyll and GitHub Pages would probably be a good fit for this. I’d used both at work (Jekyll for an abortive first-stab at a company-wide branding guide site; GitHub Pages to host the documentation for my component libraries), but had always used them with a workflow like this:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;develop stuff locally
+  |
+  V
+do a manual build locally
+  |
+  V
+push build artifacts to GitHub Pages
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;It was somewhat convenient. Jekyll let me write content in markdown, which made it way more portable and way more approachable to non-tech folks. GitHub Pages is free, pretty much infrastructure-less, and well-documented. But the need to manually build then push build artifacts to a hosting environment seemed like a rough edge I could sand off.&lt;/p&gt;
+
+&lt;h2 id=&quot;adding-travis-ci&quot;&gt;Adding Travis CI&lt;/h2&gt;
+
+&lt;p&gt;Never do something yourself that a robot can do for you. The steps to build and deploy a Jekyll site on GitHub Pages were repetitive, so I went looking for a robot who could do it for me.&lt;/p&gt;
+
+&lt;p&gt;I went with Travis CI because it has great integration into GitHub, and is also free and relatively infrastructure-less.&lt;/p&gt;
+
+&lt;p&gt;The basic setup was pretty simple: I connected my Travis CI and GitHub accounts, added my GitHub access token to Travis CI’s secrets manager, and created a &lt;code class=&quot;highlighter-rouge&quot;&gt;.travis.yml&lt;/code&gt; file.&lt;/p&gt;
+
+&lt;h2 id=&quot;caching&quot;&gt;Caching&lt;/h2&gt;
+
+&lt;p&gt;Probably the most important improvement I made in the whole process was to set up Travis CI to cache correctly! I ended up doing &lt;a href=&quot;https://docs.travis-ci.com/user/caching#cache-rvm-ruby-version-for-non-ruby-projects&quot; target=&quot;_blank&quot;&gt;this&lt;/a&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;cache&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
   &lt;span class=&quot;na&quot;&gt;directories&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
     &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/home/travis/.rvm/&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-    &lt;p&gt;It reduced my total build times from an average of 3 minutes 20 seconds to an average of 45 seconds, or about four times faster.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-    &lt;p&gt;&lt;img src=&quot;/blog/images/faster-builds.png&quot; alt=&quot;screenshot showing two markedly different build times; 3 minutes and 28 seconds before this change, versus 46 seconds after.&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;It reduced my total build times from an average of 3 minutes 20 seconds to an average of 45 seconds, or about four times faster.&lt;/p&gt;
 
-    &lt;p&gt;The &lt;a href=&quot;https://travis-ci.org/chadlavi/blog/builds/605132241&quot; target=&quot;_blank&quot;&gt;last  build before the change&lt;/a&gt; had an install time of 153.21 seconds; the &lt;a href=&quot;https://travis-ci.org/chadlavi/blog/builds/605134945&quot; target=&quot;_blank&quot;&gt;first build after the change&lt;/a&gt; had an install time of &lt;em&gt;0.38 seconds&lt;/em&gt;. That’s roughly 400 times faster.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/blog/images/faster-builds.png&quot; alt=&quot;screenshot showing two markedly different build times; 3 minutes and 28 seconds before this change, versus 46 seconds after.&quot; /&gt;&lt;/p&gt;
 
-    &lt;p&gt;You can see the full build log for this blog at &lt;a href=&quot;https://travis-ci.org/chadlavi/blog/builds&quot; target=&quot;_blank&quot;&gt;https://travis-ci.org/chadlavi/blog/builds&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Chad Lavimoniere</name></author><category term="jekyll" /><category term="markdown" /><category term="travis-ci" /><summary type="html">be sure to cache correctly! I ended up doing this: cache: directories: - /home/travis/.rvm/ It reduced my total build times from an average of 3 minutes 20 seconds to an average of 45 seconds, or about four times faster. The last build before the change had an install time of 153.21 seconds; the first build after the change had an install time of 0.38 seconds. That’s roughly 400 times faster. You can see the full build log for this blog at https://travis-ci.org/chadlavi/blog/builds</summary></entry><entry><title type="html">Why does React Native development suck so much?</title><link href="/blog/2019/10/23/react-native.html" rel="alternate" type="text/html" title="Why does React Native development suck so much?" /><published>2019-10-23T00:00:00+00:00</published><updated>2019-10-23T00:00:00+00:00</updated><id>/blog/2019/10/23/react-native</id><content type="html" xml:base="/blog/2019/10/23/react-native.html">&lt;ul&gt;
+&lt;p&gt;The &lt;a href=&quot;https://travis-ci.org/chadlavi/blog/builds/605132241&quot; target=&quot;_blank&quot;&gt;last  build before the change&lt;/a&gt; had an install time of 153.21 seconds; the &lt;a href=&quot;https://travis-ci.org/chadlavi/blog/builds/605134945&quot; target=&quot;_blank&quot;&gt;first build after the change&lt;/a&gt; had an install time of &lt;em&gt;0.38 seconds&lt;/em&gt;. That’s roughly 400 times faster.&lt;/p&gt;
+
+&lt;p&gt;You can see the full build log for this blog at &lt;a href=&quot;https://travis-ci.org/chadlavi/blog/builds&quot; target=&quot;_blank&quot;&gt;https://travis-ci.org/chadlavi/blog/builds&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;new-workflow&quot;&gt;New workflow&lt;/h2&gt;
+
+&lt;p&gt;I actually completely composed this blog post (and even added the image above) &lt;em&gt;directly in the text editor on GitHub&lt;/em&gt;. With Travis CI set up to automatically run builds whenever new changes are committed on the master branch of this repository, I can basically treat the &lt;em&gt;Create new file&lt;/em&gt; text input like it’s a markdown-specific CMS.&lt;/p&gt;
+
+&lt;p&gt;I’m anticipating that this is going to mean a lot more freedom in how I can add new blog posts or edit existing ones in the future; the only thing I can’t do directly from GitHub is preview changes accurately, or change more than one file per commit. This will probably mean sort of a separation of concerns: markdown I can compose and upload from anywhere, but template or infrastructure changes will still need a more traditional dev setup.&lt;/p&gt;</content><author><name>Chad Lavimoniere</name></author><category term="jekyll" /><category term="markdown" /><category term="travis-ci" /><summary type="html">I originally created this blog as an excuse to experiment with the JAM stack, but I quickly realized I didn’t really need any CRUD functionality; it’s just a blog, no forms or uploads to speak of. The initial code for that never made it to a git repo, and frankly didn’t get too far past an npx create-react-app.</summary></entry><entry><title type="html">Why does React Native development suck so much?</title><link href="/blog/2019/10/23/react-native.html" rel="alternate" type="text/html" title="Why does React Native development suck so much?" /><published>2019-10-23T00:00:00+00:00</published><updated>2019-10-23T00:00:00+00:00</updated><id>/blog/2019/10/23/react-native</id><content type="html" xml:base="/blog/2019/10/23/react-native.html">&lt;ul&gt;
   &lt;li&gt;no &lt;code class=&quot;highlighter-rouge&quot;&gt;yarn link&lt;/code&gt; =&amp;gt; difficult for library maintainers to test their code&lt;/li&gt;
   &lt;li&gt;every major iOS update === breaking change in your workflow
     &lt;ul&gt;
