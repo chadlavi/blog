@@ -2934,15 +2934,17 @@ a.tag:hover { text-decoration: none; transform: translateY(-2px); color: white; 
 
 a.tag:hover:focus { color: white; }
 
-a:not([href^='#']):not([href^='/']):after, a[target="_blank"]::after { font-family: 'Font Awesome 5 Free'; content: "  \f35d"; font-size: 65%; vertical-align: middle; white-space: pre; }
+a:not([href^='#']):not([href^='/']):after, a[target="_blank"]::after { font-family: 'Font Awesome 5 Free'; content: "  \f35d"; font-size: 12px; vertical-align: middle; white-space: pre; display: inline-block; transform: translateY(-1px); margin-right: 2px; }
+
+.site-footer a:not([href^='#']):not([href^='/']):after, .site-footer a[target="_blank"]::after { transform: translateY(-2px); }
 
 /** Blockquotes */
-blockquote { color: #555; border-left: 4px solid #dbdbdb; padding-left: 16px; font-size: 20.25px; }
+blockquote { color: #555; border-left: 4px solid #dbdbdb; padding-left: 16px; font-size: 20px; }
 
 blockquote > :last-child { margin-bottom: 0; }
 
 /** Code formatting */
-pre, code { font-size: 16.875px; border: 1px solid #dbdbdb; border-radius: 3px; background-color: #f9f9fb; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+pre, code { font-size: 16px; border: 1px solid #dbdbdb; border-radius: 3px; background-color: #f9f9fb; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
 
 code { padding: 1px 5px; }
 
