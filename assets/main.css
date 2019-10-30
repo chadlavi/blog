@@ -3072,6 +3072,8 @@ table td { border: 1px solid #dbdbdb; }
 
 .post-content li { margin-bottom: 8px; }
 
+.post-content li li:first-child { margin-top: 8px; }
+
 /** Syntax highlighting styles */
 .highlight { background: #fff; }
 
