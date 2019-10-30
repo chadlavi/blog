@@ -7,6 +7,6 @@ nav: false
 
 Welcome, weary traveller. 
 
-This page has no content, so please enjoy these puppies.
+This page has no content, so please enjoy these adorable puppies.
 
 ![Adorable puppies](/blog/images/puppy.jpg)
