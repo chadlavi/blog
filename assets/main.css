@@ -2890,13 +2890,17 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { m
 body { font: 400 18px/1.5 "Libre Franklin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; color: #111; background-color: white; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
-h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 16px; }
+h1, h2, h3, h4, h5, h6, p, blockquote, ul, ol, dl, figure { margin-bottom: 16px; }
+
+@media screen and (max-width: 600px) { h1, h2, h3, h4, h5, h6, p, blockquote, ul, ol, dl, figure { margin-bottom: 32px; } }
+
+pre { margin: 32px auto; }
 
 /** `main` element */
 main { display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */ }
 
 /** Images */
-img { max-width: 100%; vertical-align: middle; }
+img { max-width: 100%; vertical-align: middle; margin: 16px auto; }
 
 /** Figures */
 figure > img { display: block; }
@@ -2911,7 +2915,7 @@ li > ul, li > ol { margin-bottom: 0; }
 /** Headings */
 h1, h2, h3, h4, h5, h6 { font-weight: 400; }
 
-h1 { font-family: "Archivo Black", Libre Franklin, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol; }
+h1, h2, h3, h4 { font-family: "Archivo Black", Libre Franklin, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol; }
 
 span#byline { display: none; }
 
@@ -3058,17 +3062,13 @@ table td { border: 1px solid #dbdbdb; }
 
 .post-content { margin-bottom: 32px; }
 
-.post-content h2 { font-size: 36px; }
+.post-content h2 { font-size: 27px; }
 
-@media screen and (max-width: 800px) { .post-content h2 { font-size: 31.5px; } }
+.post-content * + h2, .post-content * + h3, .post-content * + h4 { margin: 48px 0 8px 0; }
 
-.post-content h3 { font-size: 29.25px; }
+.post-content h3 { font-size: 22.5px; }
 
-@media screen and (max-width: 800px) { .post-content h3 { font-size: 24.75px; } }
-
-.post-content h4 { font-size: 22.5px; }
-
-@media screen and (max-width: 800px) { .post-content h4 { font-size: 20.25px; } }
+.post-content h4 { font-size: 19.8px; }
 
 .post-content p { line-height: 1.75; }
 
