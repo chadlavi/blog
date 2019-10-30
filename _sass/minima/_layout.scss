@@ -215,6 +215,9 @@
 .post-link {
   margin-bottom: 0;
   line-height: 1;
+  & a:focus {
+    display: inline-block;
+  }
 }
 
 
