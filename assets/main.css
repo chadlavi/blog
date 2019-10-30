@@ -2920,13 +2920,19 @@ a { border-radius: 3px; color: #5551ff; text-decoration: none; }
 
 a:focus { box-shadow: 0 0 0 2px white, 0 0 0 5px #5551ff; }
 
-a:visited { color: #231eff; }
+a:visited, a:active { color: #3c38ff; }
 
 a:hover { color: inherit; text-decoration: underline; }
 
+a:hover:focus { color: #5551ff; text-decoration: none; }
+
 a.tag { display: inline-block; padding: 3px 9px; margin: 0 3px 7px 0; color: white; background: #5551ff; border-radius: 4px; }
 
-a.tag:hover { text-decoration: none; transform: translateY(-2px); }
+a.tag:active { color: white; background: #3c38ff; }
+
+a.tag:hover { text-decoration: none; transform: translateY(-2px); color: white; }
+
+a.tag:hover:focus { color: white; }
 
 a:not([href^='#']):not([href^='/']):after, a[target="_blank"]::after { font-family: 'Font Awesome 5 Free'; content: "  \f35d"; font-size: 65%; vertical-align: middle; white-space: pre; }
 
@@ -2974,12 +2980,6 @@ table td { border: 1px solid #dbdbdb; }
 .site-header { min-height: 59.68px; position: relative; }
 
 .site-title { line-height: 60.75px; margin-bottom: 0; float: left; }
-
-.site-title a { text-decoration: none; }
-
-.site-title a, .site-title a:visited { color: #5551ff; }
-
-.site-title a:hover { text-decoration: underline; color: inherit; }
 
 .site-nav { float: right; line-height: 60.75px; }
 
