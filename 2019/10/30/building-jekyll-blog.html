@@ -8,15 +8,15 @@
 <meta property="og:title" content="Building a markdown-based blog with Jekyll and github pages" />
 <meta name="author" content="Chad Lavimoniere" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="be sure to cache correctly!" />
-<meta property="og:description" content="be sure to cache correctly!" />
+<meta name="description" content="be sure to cache correctly! I ended up doing this: cache: directories: - /home/travis/.rvm/ It reduced my build times from about 3 minutes 20 seconds to about 45 seconds." />
+<meta property="og:description" content="be sure to cache correctly! I ended up doing this: cache: directories: - /home/travis/.rvm/ It reduced my build times from about 3 minutes 20 seconds to about 45 seconds." />
 <link rel="canonical" href="/blog/2019/10/30/building-jekyll-blog.html" />
 <meta property="og:url" content="/blog/2019/10/30/building-jekyll-blog.html" />
 <meta property="og:site_name" content="Chad Lavimoniere" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-10-30T00:00:00+00:00" />
 <script type="application/ld+json">
-{"description":"be sure to cache correctly!","@type":"BlogPosting","headline":"Building a markdown-based blog with Jekyll and github pages","datePublished":"2019-10-30T00:00:00+00:00","url":"/blog/2019/10/30/building-jekyll-blog.html","dateModified":"2019-10-30T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/blog/2019/10/30/building-jekyll-blog.html"},"author":{"@type":"Person","name":"Chad Lavimoniere"},"@context":"https://schema.org"}</script>
+{"description":"be sure to cache correctly! I ended up doing this: cache: directories: - /home/travis/.rvm/ It reduced my build times from about 3 minutes 20 seconds to about 45 seconds.","@type":"BlogPosting","headline":"Building a markdown-based blog with Jekyll and github pages","datePublished":"2019-10-30T00:00:00+00:00","url":"/blog/2019/10/30/building-jekyll-blog.html","dateModified":"2019-10-30T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/blog/2019/10/30/building-jekyll-blog.html"},"author":{"@type":"Person","name":"Chad Lavimoniere"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/blog/feed.xml" title="Chad Lavimoniere" /></head>
 <body><header class="site-header" role="banner">
@@ -38,8 +38,15 @@
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul>
-  <li>be sure to cache correctly!
-  <img src="/blog/images/faster-builds.png" alt="screenshot showing two markedly different build times; 3 minutes and 28 seconds before this change, versus 46 seconds after." /></li>
+  <li>be sure to cache correctly! I ended up doing <a href="https://docs.travis-ci.com/user/caching#cache-rvm-ruby-version-for-non-ruby-projects" target="_blank">this</a>:
+    <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="na">cache</span><span class="pi">:</span>
+    <span class="na">directories</span><span class="pi">:</span>
+      <span class="pi">-</span> <span class="s">/home/travis/.rvm/</span>
+</code></pre></div>    </div>
+    <p>It reduced my build times from about 3 minutes 20 seconds to about 45 seconds.</p>
+
+    <p><img src="/blog/images/faster-builds.png" alt="screenshot showing two markedly different build times; 3 minutes and 28 seconds before this change, versus 46 seconds after." /></p>
+  </li>
 </ul>
 
   </div><div id="tags" class="post-meta tags">
