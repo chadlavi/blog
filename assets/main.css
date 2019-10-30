@@ -3053,6 +3053,8 @@ table td { border: 1px solid #dbdbdb; }
 
 .post-link { margin-bottom: 0; line-height: 1; }
 
+.post-link a:focus { display: inline-block; }
+
 /** Posts */
 .post-header { margin-bottom: 32px; }
 
