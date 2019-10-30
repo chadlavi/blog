@@ -37,13 +37,19 @@ body {
  * Set `margin-bottom` to maintain vertical rhythm
  */
 h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
+p, blockquote,
 ul, ol, dl, figure,
 %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
+
+  @include under($mobile) {
+    margin-bottom: $spacing-unit;
+  }
 }
 
-
+pre {
+  margin: $spacing-unit auto;
+}
 
 /**
  * `main` element
@@ -60,6 +66,7 @@ main {
 img {
   max-width: 100%;
   vertical-align: middle;
+  margin: #{$spacing-unit / 2} auto;
 }
 
 
@@ -100,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
 
-h1 {
+h1, h2, h3, h4 {
   font-family: 'Archivo Black', #{$base-font-family};
 }
 

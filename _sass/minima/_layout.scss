@@ -242,27 +242,19 @@
   margin-bottom: $spacing-unit;
 
   h2 {
-    @include relative-font-size(2);
-
-    @include under($tablet) {
-      @include relative-font-size(1.75);
-    }
+    @include relative-font-size(1.5);
+  }
+  
+  * + h2, * + h3, * + h4 {
+    margin: #{$spacing-unit * 1.5} 0 #{$spacing-unit / 4} 0;
   }
 
   h3 {
-    @include relative-font-size(1.625);
-
-    @include under($tablet) {
-      @include relative-font-size(1.375);
-    }
+    @include relative-font-size(1.25);
   }
 
   h4 {
-    @include relative-font-size(1.25);
-
-    @include under($tablet) {
-      @include relative-font-size(1.125);
-    }
+    @include relative-font-size(1.1);
   }
   p {
     line-height: 1.75;
