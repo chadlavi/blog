@@ -8,5 +8,12 @@ tags:
 - markdown
 ---
 
-* be sure to cache correctly!
+* be sure to cache correctly! I ended up doing <a href="https://docs.travis-ci.com/user/caching#cache-rvm-ruby-version-for-non-ruby-projects" target="_blank">this</a>:
+    ```yaml
+    cache:
+      directories:
+        - /home/travis/.rvm/
+    ```
+    It reduced my build times from about 3 minutes 20 seconds to about 45 seconds.
+    
     ![screenshot showing two markedly different build times; 3 minutes and 28 seconds before this change, versus 46 seconds after.](/blog/images/faster-builds.png)
