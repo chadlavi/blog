@@ -157,9 +157,17 @@ a {
   &:not([href^='#']):not([href^='/']):after, &[target="_blank"]::after {
     font-family: 'Font Awesome 5 Free';
     content: "  \f35d";
-    font-size: 65%;
+    @include relative-font-size(2/3);
     vertical-align: middle;
     white-space: pre;
+    display: inline-block;
+    transform: translateY(-1px);
+    margin-right: 2px;
+  }
+}
+.site-footer a {
+  &:not([href^='#']):not([href^='/']):after, &[target="_blank"]::after {
+    transform: translateY(-2px);
   }
 }
 
@@ -170,7 +178,7 @@ blockquote {
   color: $light-text;
   border-left: 4px solid $grey-color-light;
   padding-left: $spacing-unit / 2;
-  @include relative-font-size(1.125);
+  @include relative-font-size(10/9);
 
   > :last-child {
     margin-bottom: 0;
@@ -184,7 +192,7 @@ blockquote {
  */
 pre,
 code {
-  @include relative-font-size(0.9375);
+  @include relative-font-size(8/9);
   border: 1px solid $grey-color-light;
   border-radius: 3px;
   background-color: #f9f9fb;
