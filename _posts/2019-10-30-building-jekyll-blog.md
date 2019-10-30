@@ -21,4 +21,4 @@ tags:
   
   The <a href="https://travis-ci.org/chadlavi/blog/builds/605132241" target="_blank">last  build before the change</a> had an install time of 153.21 seconds; the <a href="https://travis-ci.org/chadlavi/blog/builds/605134945" target="_blank">first build after the change</a> had a build time of _0.38 seconds_. That's roughly 400 times faster.
   
-  You can see the full build log for this blog at <a href="https://travis-ci.org/chadlavi/blog/builds" target=_blank">https://travis-ci.org/chadlavi/blog/builds</a>
+  You can see the full build log for this blog at <a href="https://travis-ci.org/chadlavi/blog/builds" target="_blank">https://travis-ci.org/chadlavi/blog/builds</a>
