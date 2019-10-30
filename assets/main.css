@@ -3051,7 +3051,7 @@ table td { border: 1px solid #dbdbdb; }
 
 .post-meta { font-size: 15.75px; color: #757575; }
 
-.post-link { font-size: 21.6px; margin-bottom: 0; }
+.post-link { margin-bottom: 0; line-height: 1; }
 
 /** Posts */
 .post-header { margin-bottom: 32px; }
