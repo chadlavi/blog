@@ -8,15 +8,15 @@
 <meta property="og:title" content="Converting my React component library to TypeScript" />
 <meta name="author" content="Chad Lavimoniere" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Design engineer, library maintainer. Formerly freelance, currently design system and frontend component library maintainer at Casebook." />
-<meta property="og:description" content="Design engineer, library maintainer. Formerly freelance, currently design system and frontend component library maintainer at Casebook." />
+<meta name="description" content="Do it little by little over time Don’t fork! You’ll end up doing bug fixes and new features twice until you switch to the new TS fork Basic, but: don’t be tempted to just do a bunch of any and (...args: any[]) =&gt; any. You’ll pay for it later." />
+<meta property="og:description" content="Do it little by little over time Don’t fork! You’ll end up doing bug fixes and new features twice until you switch to the new TS fork Basic, but: don’t be tempted to just do a bunch of any and (...args: any[]) =&gt; any. You’ll pay for it later." />
 <link rel="canonical" href="/blog/2019/10/22/converting-typescript.html" />
 <meta property="og:url" content="/blog/2019/10/22/converting-typescript.html" />
 <meta property="og:site_name" content="Chad Lavimoniere" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-10-22T00:00:00+00:00" />
 <script type="application/ld+json">
-{"description":"Design engineer, library maintainer. Formerly freelance, currently design system and frontend component library maintainer at Casebook.","@type":"BlogPosting","headline":"Converting my React component library to TypeScript","datePublished":"2019-10-22T00:00:00+00:00","url":"/blog/2019/10/22/converting-typescript.html","dateModified":"2019-10-22T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/blog/2019/10/22/converting-typescript.html"},"author":{"@type":"Person","name":"Chad Lavimoniere"},"@context":"https://schema.org"}</script>
+{"description":"Do it little by little over time Don’t fork! You’ll end up doing bug fixes and new features twice until you switch to the new TS fork Basic, but: don’t be tempted to just do a bunch of any and (...args: any[]) =&gt; any. You’ll pay for it later.","@type":"BlogPosting","headline":"Converting my React component library to TypeScript","datePublished":"2019-10-22T00:00:00+00:00","url":"/blog/2019/10/22/converting-typescript.html","dateModified":"2019-10-22T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/blog/2019/10/22/converting-typescript.html"},"author":{"@type":"Person","name":"Chad Lavimoniere"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/blog/feed.xml" title="Chad Lavimoniere" /></head>
 <body><header class="site-header" role="banner">
@@ -37,7 +37,15 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    
+    <ul>
+  <li>Do it little by little over time</li>
+  <li>Don’t fork!
+    <ul>
+      <li>You’ll end up doing bug fixes and new features twice until you switch to the new TS fork</li>
+    </ul>
+  </li>
+  <li>Basic, but: don’t be tempted to just do a bunch of <code class="highlighter-rouge">any</code> and <code class="highlighter-rouge">(...args: any[]) =&gt; any</code>. You’ll pay for it later.</li>
+</ul>
 
   </div><div id="tags" class="post-meta tags">
   <p class="title">Topics</p>
