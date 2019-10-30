@@ -2953,9 +2953,9 @@ pre { border-radius: 8px; padding: 8px 12px; overflow-x: auto; }
 pre > code { border: 0; padding-right: 0; padding-left: 0; background-color: unset; }
 
 /** Wrapper */
-.wrapper { max-width: -webkit-calc(700px - (32px * 2)); max-width: calc(700px - (32px * 2)); margin-right: auto; margin-left: auto; padding-right: 32px; padding-left: 32px; }
+.wrapper { max-width: -webkit-calc(760px - (32px * 2)); max-width: calc(760px - (32px * 2)); margin-right: auto; margin-left: auto; padding-right: 32px; padding-left: 32px; }
 
-@media screen and (max-width: 800px) { .wrapper { max-width: -webkit-calc(700px - (32px)); max-width: calc(700px - (32px)); padding-right: 16px; padding-left: 16px; } }
+@media screen and (max-width: 800px) { .wrapper { max-width: -webkit-calc(760px - (32px)); max-width: calc(760px - (32px)); padding-right: 16px; padding-left: 16px; } }
 
 /** Clearfix */
 .wrapper:after, .footer-col-wrapper:after { content: ""; display: table; clear: both; }
