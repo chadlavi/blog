@@ -6,6 +6,7 @@ date:   2019-10-30
 tags:
 - jekyll
 - markdown
+- travis-ci
 ---
 
 * be sure to cache correctly! I ended up doing <a href="https://docs.travis-ci.com/user/caching#cache-rvm-ruby-version-for-non-ruby-projects" target="_blank">this</a>:
