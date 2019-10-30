@@ -38,7 +38,9 @@
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul>
-  <li>be sure to cache correctly! I ended up doing <a href="https://docs.travis-ci.com/user/caching#cache-rvm-ruby-version-for-non-ruby-projects" target="_blank">this</a>:
+  <li>
+    <p>be sure to cache correctly! I ended up doing <a href="https://docs.travis-ci.com/user/caching#cache-rvm-ruby-version-for-non-ruby-projects" target="_blank">this</a>:</p>
+
     <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">cache</span><span class="pi">:</span>
   <span class="na">directories</span><span class="pi">:</span>
     <span class="pi">-</span> <span class="s">/home/travis/.rvm/</span>
