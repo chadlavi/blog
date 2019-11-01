@@ -44,10 +44,6 @@ ul, ol, dl, figure,
   }
 }
 
-pre {
-  margin: $spacing-unit auto;
-}
-
 /**
  * `main` element
  */
@@ -194,8 +190,8 @@ blockquote {
 pre,
 code {
   @include relative-font-size(8/9);
-  border: 1px solid $grey-color-light;
-  border-radius: 3px;
+  border: 2px solid $grey-color-light;
+  border-radius: 4px;
   background-color: #f9f9fb;
   font-family: $monospace-font;
 }
@@ -205,6 +201,7 @@ code {
 }
 
 pre {
+  margin: $spacing-unit auto;
   border-radius: 8px;
   padding: 8px 12px;
   overflow-x: auto;
