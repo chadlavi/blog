@@ -2903,9 +2903,11 @@ main { display: block; /* Default value of `display` of `main` element is 'inlin
 img { max-width: 100%; vertical-align: middle; margin: 16px auto; }
 
 /** Figures */
-figure > img { display: block; }
+figure { margin: 32px 0; }
 
-figcaption { font-size: 15.75px; }
+figure img { display: block; margin-bottom: 8px; outline: 1px solid; }
+
+figure figcaption { font-size: 15.75px; color: #444; text-align: center; padding: 0 16px; }
 
 /** Lists */
 ul, ol { margin-left: 16px; }
@@ -2943,7 +2945,7 @@ a:not([href^='#']):not([href^='/']):after, a[target="_blank"]::after { font-fami
 .site-footer a:not([href^='#']):not([href^='/']):after, .site-footer a[target="_blank"]::after { transform: translateY(-2px); }
 
 /** Blockquotes */
-blockquote { color: #555; border-left: 4px solid #dbdbdb; padding-left: 16px; font-size: 20px; }
+blockquote { color: #444; border-left: 4px solid #dbdbdb; padding-left: 16px; font-size: 20px; }
 
 blockquote > :last-child { margin-bottom: 0; }
 
@@ -3012,7 +3014,7 @@ table td { border: 1px solid #dbdbdb; }
 
 .tags { margin-top: 64px; }
 
-.tags .title { text-transform: uppercase; }
+.tags .title { font-size: 90%; font-weight: bold; letter-spacing: 0.7px; margin-bottom: 4px; text-transform: uppercase; }
 
 /** Site footer */
 .site-footer { padding: 64px 0 0 0; margin-top: 64px; background: #111; color: white; }
@@ -3072,7 +3074,7 @@ table td { border: 1px solid #dbdbdb; }
 
 .post-content h4 { font-size: 19.8px; }
 
-.post-content p { line-height: 1.75; }
+.post-content p { line-height: 1.5; }
 
 .post-content li { margin-bottom: 8px; }
 
