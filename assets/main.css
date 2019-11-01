@@ -2894,8 +2894,6 @@ h1, h2, h3, h4, h5, h6, p, blockquote, ul, ol, dl, figure { margin-bottom: 16px;
 
 @media screen and (max-width: 600px) { h1, h2, h3, h4, h5, h6, p, blockquote, ul, ol, dl, figure { margin-bottom: 32px; } }
 
-pre { margin: 32px auto; }
-
 /** `main` element */
 main { display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */ }
 
@@ -2945,16 +2943,16 @@ a:not([href^='#']):not([href^='/']):after, a[target="_blank"]::after { font-fami
 .site-footer a:not([href^='#']):not([href^='/']):after, .site-footer a[target="_blank"]::after { transform: translateY(-2px); }
 
 /** Blockquotes */
-blockquote { color: #444; border-left: 4px solid #dbdbdb; padding-left: 16px; font-size: 20px; }
+blockquote { color: #444; border-left: 4px solid #e8e8e8; padding-left: 16px; font-size: 20px; }
 
 blockquote > :last-child { margin-bottom: 0; }
 
 /** Code formatting */
-pre, code { font-size: 16px; border: 1px solid #dbdbdb; border-radius: 3px; background-color: #f9f9fb; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+pre, code { font-size: 16px; border: 2px solid #e8e8e8; border-radius: 4px; background-color: #f9f9fb; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
 
 code { padding: 1px 5px; }
 
-pre { border-radius: 8px; padding: 8px 12px; overflow-x: auto; }
+pre { margin: 32px auto; border-radius: 8px; padding: 8px 12px; overflow-x: auto; }
 
 pre > code { border: 0; padding-right: 0; padding-left: 0; background-color: unset; }
 
@@ -2974,15 +2972,15 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; background-color: uns
 .social-media-list a { padding: 4px 9px; margin-left: -4px; }
 
 /** Tables */
-table { margin-bottom: 32px; width: 100%; text-align: left; color: #3f3f3f; border-collapse: collapse; border: 1px solid #dbdbdb; }
+table { margin-bottom: 32px; width: 100%; text-align: left; color: #3f3f3f; border-collapse: collapse; border: 1px solid #e8e8e8; }
 
-table tr:nth-child(even) { background-color: #eaeaea; }
+table tr:nth-child(even) { background-color: #f7f7f7; }
 
 table th, table td { padding: 10.6666666667px 16px; }
 
-table th { background-color: #e3e3e3; border: 1px solid #d1d1d1; border-bottom-color: #bcbcbc; }
+table th { background-color: #efefef; border: 1px solid #dedede; border-bottom-color: #c9c9c9; }
 
-table td { border: 1px solid #dbdbdb; }
+table td { border: 1px solid #e8e8e8; }
 
 /** Site header */
 .site-header { min-height: 59.68px; position: relative; }
@@ -3003,7 +3001,7 @@ table td { border: 1px solid #dbdbdb; }
 
 .site-nav .page-link:hover { text-decoration: underline; color: inherit; }
 
-@media screen and (max-width: 600px) { .site-nav { position: absolute; top: 9px; right: 16px; background-color: white; border: 1px solid #dbdbdb; border-radius: 5px; text-align: right; }
+@media screen and (max-width: 600px) { .site-nav { position: absolute; top: 9px; right: 16px; background-color: white; border: 1px solid #e8e8e8; border-radius: 5px; text-align: right; }
   .site-nav label[for="nav-trigger"] { display: block; float: right; width: 36px; height: 36px; z-index: 2; cursor: pointer; }
   .site-nav .menu-icon { display: block; float: right; width: 36px; height: 26px; line-height: 0; padding-top: 10px; text-align: center; }
   .site-nav .menu-icon > svg { fill: #353535; }
@@ -3033,7 +3031,7 @@ table td { border: 1px solid #dbdbdb; }
 
 .footer-col-1 { width: -webkit-calc(40% - (32px / 2)); width: calc(40% - (32px / 2)); }
 
-.footer-col-2 { width: -webkit-calc(60% - (32px / 2)); width: calc(60% - (32px / 2)); color: #dbdbdb; }
+.footer-col-2 { width: -webkit-calc(60% - (32px / 2)); width: calc(60% - (32px / 2)); color: #e8e8e8; }
 
 @media screen and (max-width: 800px) { .footer-col-1, .footer-col-2 { width: -webkit-calc(50% - (32px / 2)); width: calc(50% - (32px / 2)); }
   .footer-col-3 { width: -webkit-calc(100% - (32px / 2)); width: calc(100% - (32px / 2)); } }
@@ -3079,8 +3077,6 @@ table td { border: 1px solid #dbdbdb; }
 .post-content li li:first-child { margin-top: 8px; }
 
 /** Syntax highlighting styles */
-.highlight { background: #fff; }
-
 .highlighter-rouge .highlight { background: #fefefe; }
 
 .highlight .c { color: #6c6c6c; font-style: italic; }
