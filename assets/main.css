@@ -2967,7 +2967,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; background-color: uns
 .wrapper:after, .footer-col-wrapper:after { content: ""; display: table; clear: both; }
 
 /** Icons */
-.svg-icon { width: 16px; height: 16px; display: inline-block; fill: #757575; padding-right: 5px; vertical-align: text-top; }
+.svg-icon { width: 16px; height: 16px; display: inline-block; fill: #444; padding-right: 5px; vertical-align: text-top; }
 
 .social-media-list li + li { padding-top: 5px; }
 
@@ -3073,8 +3073,6 @@ table td { border: 1px solid #dbdbdb; }
 .post-content h3 { font-size: 22.5px; }
 
 .post-content h4 { font-size: 19.8px; }
-
-.post-content p { line-height: 1.5; }
 
 .post-content li { margin-bottom: 8px; }
 
