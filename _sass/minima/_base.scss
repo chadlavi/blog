@@ -12,7 +12,6 @@ dl, dd, ol, ul, figure {
   outline: none;
 }
 
-
 /**
  * Basic styling
  */
@@ -30,8 +29,6 @@ body {
   min-height: 100vh;
   flex-direction: column;
 }
-
-
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -58,8 +55,6 @@ main {
   display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
 
-
-
 /**
  * Images
  */
@@ -69,20 +64,23 @@ img {
   margin: #{$spacing-unit / 2} auto;
 }
 
-
-
 /**
  * Figures
  */
-figure > img {
-  display: block;
+figure { 
+  margin: $spacing-unit 0;
+  img {
+    display: block;
+    margin-bottom: $spacing-unit / 4;
+    outline: 1px solid;
+  }
+  figcaption {
+    font-size: $small-font-size;
+    color: $light-text;
+    text-align: center;
+    padding: 0 $spacing-unit / 2;
+  }
 }
-
-figcaption {
-  font-size: $small-font-size;
-}
-
-
 
 /**
  * Lists
@@ -97,8 +95,6 @@ li {
     margin-bottom: 0;
   }
 }
-
-
 
 /**
  * Headings
@@ -192,8 +188,6 @@ blockquote {
   }
 }
 
-
-
 /**
  * Code formatting
  */
@@ -223,8 +217,6 @@ pre {
   }
 }
 
-
-
 /**
  * Wrapper
  */
@@ -245,8 +237,6 @@ pre {
   }
 }
 
-
-
 /**
  * Clearfix
  */
@@ -255,8 +245,6 @@ pre {
   display: table;
   clear: both;
 }
-
-
 
 /**
  * Icons
@@ -280,8 +268,6 @@ pre {
     margin-left: -4px;
   }
 }
-
-
 
 /**
  * Tables
