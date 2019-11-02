@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  How not to convert a React component library to TypeScript
-date:   2019-10-22
+# date:   2019-11
+published: false
 tags:
 - react
 - TypeScript
