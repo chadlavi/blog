@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  Why does React Native development suck so much?
-date:   2019-10-23
-updated: 2019-10-29
+# date:   2019-11
+published: false
 tags:
 - react
 - react-native
