@@ -20,11 +20,11 @@ Seeking to save time and reduce comlexity, we opted not to go for a deluxe guide
 
 Our in-person sales pitch basically went like this: we told them we're working on an online moodboard and presentation tool, then showed them a physical printout of a beautifully designed example project. Then we'd transition to "let me show you this in the app," and take that opportunity to show them a few of the most wowing features. 
 
-(This developed, perhaps not coincidentally, into the [video](/blog/2018/09/05/video-production.html) we made.)
+(This developed, perhaps not coincidentally, into the [video]({{ site.baseurl }}/2018/09/05/video-production.html) we made.)
 
 For the first pass at in-app onboarding, we decided we would include a copy of that same example project in every new account. The flow would be something like this:
 
-![](http://chadlavimoniere.com/images/2018/09/onboarding/flow-1.jpg)
+![]({{ site.baseurl }}/images/2018/09/06/flow-1.jpg)
 
 ###### the first pass at user onboarding in prsnt
 
@@ -36,7 +36,7 @@ For another, whether or not users explored the example project, not a lot of the
 
 So, we decided to add a screen to onboarding that explained the basic steps of using prsnt. This screen had three steps: adding images (which included a link to get the plugin), dragging and dropping to rearrange, and saving/printing presentations. The flow was something like this:
 
-![](http://chadlavimoniere.com/images/2018/09/onboarding/flow-2.jpg)
+![]({{ site.baseurl }}/images/2018/09/06/flow-2.jpg)
 
 ###### onboarding flow in prsnt, now with a "how to" screen
 
@@ -50,7 +50,7 @@ So we decided to scrap the three-step "how to" page, and I quickly edited it to 
 
 So now the flow looked like:
 
-![](http://chadlavimoniere.com/images/2018/09/onboarding/flow-3.jpg)
+![]({{ site.baseurl }}/images/2018/09/06/flow-3.jpg)
 
 ###### onboarding flow in prsnt, now with a "get the plugin" screen
 
@@ -66,7 +66,7 @@ We also decided to bring people directly to this example project on signup, inst
 
 So, now we had a flow like this:
 
-![](http://chadlavimoniere.com/images/2018/09/onboarding/flow-4.jpg)
+![]({{ site.baseurl }}/images/2018/09/06/flow-4.jpg)
 
 ###### onboarding flow in prsnt, now with a "how to" project
 
@@ -78,6 +78,6 @@ So we compromised on this: we picked the top 6 things from the "how to" project,
 
 We also realized: if it's just two pages, we dont really need to set up a whole example project for this. So we changed it so that the first project you create in prsnt will include these two pages. Now the flow looks like this:
 
-![](http://chadlavimoniere.com/images/2018/09/onboarding/flow-5.jpg)
+![]({{ site.baseurl }}/images/2018/09/06/flow-5.jpg)
 
 ###### onboarding flow in prsnt as of September 2018 
