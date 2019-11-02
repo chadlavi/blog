@@ -49,7 +49,7 @@ cache:
 
 It reduced my total build times from an average of 3 minutes 20 seconds to an average of 45 seconds, or about four times faster.
 
-![screenshot showing two markedly different build times; 3 minutes and 28 seconds before this change, versus 46 seconds after.]({{ site.baseurl }}/images/faster-builds.png)
+![screenshot showing two markedly different build times; 3 minutes and 28 seconds before this change, versus 46 seconds after.]({{site.baseurl}}/images/faster-builds.png)
 
 The <a href="https://travis-ci.org/chadlavi/blog/builds/605132241" target="_blank">last  build before the change</a> had an install time of 153.21 seconds; the <a href="https://travis-ci.org/chadlavi/blog/builds/605134945" target="_blank">first build after the change</a> had an install time of _0.38 seconds_. That's roughly 400 times faster.
 

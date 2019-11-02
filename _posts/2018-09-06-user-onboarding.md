@@ -8,7 +8,7 @@ tags:
 - UX
 ---
 
-When we launched [prsnt.app](https://prsnt.app) to the public in August 2018, it was a seismic shift in how we brought users into the app.
+When we launched <a href="https://prsnt.app" target="_blank">prsnt.app</a> to the public in August 2018, it was a seismic shift in how we brought users into the app.
 
 Until then, we had been in a closed beta. We sought out connections we had in the interior design industry, asked for referrals, scoured Houzz and local lists for people to reach out to--in short, we scrounged up a group of early adopter users by hook and by crook in the earliest days of prsnt, and that gave us a certain advantage in terms of developmental economy; because these people heard and awful lot about prsnt before they started using it, and because they were qualified by us to make sure they were the kind of people who would want to use it, we were able to skip a lot of the things you traditionally need to put in place. There was no signup process, no in-app training or example, and no need to collect email addresses. We were already in constant contact with those early users, and we had explained the app to death by the time we let them touch it. 
 
@@ -20,11 +20,11 @@ Seeking to save time and reduce comlexity, we opted not to go for a deluxe guide
 
 Our in-person sales pitch basically went like this: we told them we're working on an online moodboard and presentation tool, then showed them a physical printout of a beautifully designed example project. Then we'd transition to "let me show you this in the app," and take that opportunity to show them a few of the most wowing features. 
 
-(This developed, perhaps not coincidentally, into the [video]({{ site.baseurl }}/2018/09/05/video-production.html) we made.)
+(This developed, perhaps not coincidentally, into the [video]({{site.baseurl}}/2018/09/05/video-production.html) we made.)
 
 For the first pass at in-app onboarding, we decided we would include a copy of that same example project in every new account. The flow would be something like this:
 
-![]({{ site.baseurl }}/images/2018/09/06/flow-1.jpg)
+![]({{site.baseurl}}/images/2018/09/06/flow-1.jpg)
 
 ###### the first pass at user onboarding in prsnt
 
@@ -36,7 +36,7 @@ For another, whether or not users explored the example project, not a lot of the
 
 So, we decided to add a screen to onboarding that explained the basic steps of using prsnt. This screen had three steps: adding images (which included a link to get the plugin), dragging and dropping to rearrange, and saving/printing presentations. The flow was something like this:
 
-![]({{ site.baseurl }}/images/2018/09/06/flow-2.jpg)
+![]({{site.baseurl}}/images/2018/09/06/flow-2.jpg)
 
 ###### onboarding flow in prsnt, now with a "how to" screen
 
@@ -50,7 +50,7 @@ So we decided to scrap the three-step "how to" page, and I quickly edited it to 
 
 So now the flow looked like:
 
-![]({{ site.baseurl }}/images/2018/09/06/flow-3.jpg)
+![]({{site.baseurl}}/images/2018/09/06/flow-3.jpg)
 
 ###### onboarding flow in prsnt, now with a "get the plugin" screen
 
@@ -66,7 +66,7 @@ We also decided to bring people directly to this example project on signup, inst
 
 So, now we had a flow like this:
 
-![]({{ site.baseurl }}/images/2018/09/06/flow-4.jpg)
+![]({{site.baseurl}}/images/2018/09/06/flow-4.jpg)
 
 ###### onboarding flow in prsnt, now with a "how to" project
 
@@ -78,6 +78,6 @@ So we compromised on this: we picked the top 6 things from the "how to" project,
 
 We also realized: if it's just two pages, we dont really need to set up a whole example project for this. So we changed it so that the first project you create in prsnt will include these two pages. Now the flow looks like this:
 
-![]({{ site.baseurl }}/images/2018/09/06/flow-5.jpg)
+![]({{site.baseurl}}/images/2018/09/06/flow-5.jpg)
 
 ###### onboarding flow in prsnt as of September 2018 

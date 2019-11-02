@@ -2,6 +2,9 @@
 layout: post
 date: 2017-05-02
 title: 'Rebuilding Arazoo part 1: navigation'
+tags:
+- information architecture
+- UX
 ---
 
 Hiring our new CTO, Peter Stern, back in early 2017 was an excellent opportunity for us at Arazoo to reexamine some of the design decisions that were made early on but were no longer carrying their weight. Peter was fresh to our org and had no emotional ties to our existing code. Whereas I'd had problems in the past getting user testing and user experience at the front of the process, Pete naturally gravitated towards the "let's go talk to people" side of things.
@@ -47,7 +50,7 @@ You _also_ used this settings menu to edit some kinds of data:
 - project names
 - workspace (i.e., folders inside a project) names
 
-![](/images/2018/05/13/old-nav.png)
+![]({{site.baseurl}}/images/2018/05/13/old-nav.png)
 
 ###### see that "settings" icon in the top left? That's where everything lived.
 
@@ -67,7 +70,7 @@ So when our users asked for things in our nav, we thanked them for their suggest
 
 We took their feedback and our observations and mocked up some solutions. For example:
 
-![](/images/2018/05/13/new-nav-1.png)
+![]({{site.baseurl}}/images/2018/05/13/new-nav-1.png)
 
 ###### the first round of design improvements
 
