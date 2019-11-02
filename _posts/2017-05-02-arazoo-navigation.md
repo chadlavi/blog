@@ -50,9 +50,10 @@ You _also_ used this settings menu to edit some kinds of data:
 - project names
 - workspace (i.e., folders inside a project) names
 
-![]({{site.baseurl}}/images/2018/05/13/old-nav.png)
-
-###### see that "settings" icon in the top left? That's where everything lived.
+<figure>
+  <img src="{{site.baseurl}}/images/2018/05/13/old-nav.png" alt="screenshot of the old nav in Arazoo" />
+  <figcaption>see that "settings" icon in the top left? That's where everything lived.</figcaption>
+</figure>
 
 It was... sort of a mess. There was a huge amount of importance placed on that one affordance, and a mix of navigational and functional features.
 
@@ -70,9 +71,10 @@ So when our users asked for things in our nav, we thanked them for their suggest
 
 We took their feedback and our observations and mocked up some solutions. For example:
 
-![]({{site.baseurl}}/images/2018/05/13/new-nav-1.png)
-
-###### the first round of design improvements
+<figure>
+  <img src="{{site.baseurl}}/images/2018/05/13/new-nav-1.png" alt="screenshot of first rough draft of new Arazoo navigation" />
+  <figcaption>the first round of design improvements</figcaption>
+</figure>
 
 In this early mockup, I did several things:
 - moved the settings icon to the right, where people expect settings stuff to be

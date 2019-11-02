@@ -46,15 +46,17 @@ I started out by shopping for a domain name. I wanted to try to find something t
 
 So now I had a name to use for the product. I next made a few arbitrary visual decisions. I picked some base colors to use: white, charcoal, serge blue, muted lilac, and forest green.  I decided to push a simple+technological feel by using a monospace font, Menlo. I wanted you to feel like you were talking right to the computer, an open, honest, simple dialogue with a powerful engine. 
 
-![highly speculative mockups]({{site.baseurl}}/images/2018/09/12/lutrus-branding.png)
-
-###### branding for lutrus
+<figure>
+  <img src="{{site.baseurl}}/images/2018/09/12/lutrus-branding.png" alt="lutrus branding"/>
+  <figcaption>branding for lutrus</figcaption>
+</figure>
 
 I made a single-page homepage with a few hero sections for the big features; the top is a CTA to sign up for early access (i.e., join our mailing list), then a section about search, then a section about filtering, then another CTA to sign up. I added some highly speculative mockups to the feature sections. 
 
-![highly speculative mockups]({{site.baseurl}}/images/2018/09/12/mockups.jpg)
-
-###### highly speculative mockups
+<figure>
+  <img src="{{site.baseurl}}/images/2018/09/12/mockups.jpg" alt="highly speculative mockups" />
+  <figcaption>highly speculative mockups</figcaption>
+</figure>
 
 I put all this in a <a href="https://github.com/chadlavi/lutrus" target="_blank">git repository</a>.
 

@@ -17,9 +17,10 @@ So, we needed some real stuff. We needed accounts. We needed persistent data. We
 
 The placeholder logo I made was really just a brand color + concept mashup. I took the FontAwesome icon for a desktop computer screen, and put the FontAwesome icon for a cloud over it. I made the frame of the screen and the cloud both our accent/link/button color, and called it a day. It suggested cloud-based display or presentation, and it matched the colors we used on the site. I shipped it and moved on to other concerns.
 
-![the original placeholder logo for prsnt.app]({{site.baseurl}}/images/2018/09/07/placeholder.jpg)
-
-###### the original placeholder prsnt.app logo
+<figure>
+  <img src="{{site.baseurl}}/images/2018/09/07/placeholder.jpg" alt="the original placeholder prsnt.app logo" />
+  <figcaption>the original placeholder prsnt.app logo</figcaption>
+</figure>
 
 We used this logo as the favicon for the site, as the icon for the Chrome plugin, and as the navbar brand icon for the first couple months of prsnt. But it was not really that inspiring; it was, to borrow a word from The Simpsons, perfectly cromulent, but no one looked at it and thought, "oh cool." A few days after I put this logo out, I made a ticket for myself in Jira that just said, "Make real logo???"
 
@@ -36,9 +37,10 @@ I knew we needed the new logo to have some important characteristics:
 
 So I set to work in sketch. I'd toyed a lot of times in the past with typography design, so I was naturally drawn to try making a logo font for prsnt. I tried to limit myself to primitive shapes: circles, rectangles and triangles only.
 
-![screenshot of the Sketch design file for the prsnt.app logo]({{site.baseurl}}/images/2018/09/07/logo-design-process.jpg)
-
-###### my design file for the new prsnt.app logo
+<figure>
+  <img src="{{site.baseurl}}/images/2018/09/07/logo-design-process.jpg" alt="screenshot of the Sketch design file for the prsnt.app logo" />
+  <figcaption>my design file for the new prsnt.app logo</figcaption>
+</figure>
 
 Striking the right balance of colors was tricky; in the first attempt, red was too prominent as the bowl of the "p", the arm of the "r" _and_ the shoulder of the "n". Plus, red + blue doesn't make green, so this felt a little too unnatural. 
 
@@ -48,12 +50,13 @@ I decided to explore the possibilities of purple (see the furthest right column)
 
 In the end, I went with the second column from the left. the inverted horseshoe that makes the collar of the "n" still creates a physics-defying color combination with its stem; red + blue still doesn't make green. But I wanted to leave it like this for a few reasons. First, as I mentioned above, I wanted to only use primary colors. Second, I felt that the balance of colors was better when I used red for the collar of the "n," because otherwise it would only be present in the counter of the "p" and the top curve of the "s". Third (and this is sort of one of those post hoc justifications), it's sort of an implied magic. The new prsnt.app logo is defying physics!
 
-![final prsnt.app logo]({{site.baseurl}}/images/2018/09/07/final-logo.jpg)
-
-###### the final logo
+<figure>
+<img src="{{site.baseurl}}/images/2018/09/07/final-logo.jpg" alt="final prsnt.app logo" />
+<figcaption>the final logo</figcaption>
+</figure>
 
 The final logo is used as the favicon on the site, as the icon for our Chrome plugin, and as the navbar brand icon. Just the leading "p" is used in most cases, with the full logo used on the homepage in in the navbar on the site. 
 
-![]({{site.baseurl}}/images/2018/09/07/right-click.jpg)
+![screenshot showing the right-click menu item "Save to prsnt.app", with the new prsnt logo.]({{site.baseurl}}/images/2018/09/07/right-click.jpg)
 
-![]({{site.baseurl}}/images/2018/09/07/plugin.jpg)
+![screenshot showing the prsnt.app plugin open on top of a website, mid-use.]({{site.baseurl}}/images/2018/09/07/plugin.jpg)
