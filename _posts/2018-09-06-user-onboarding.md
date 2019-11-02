@@ -1,8 +1,7 @@
 ---
 layout: post
 date: 2018-09-06
-udpated: 2019-10-31
-title: User onboarding flows
+title: 'User onboarding: building the house as the guests come in the door'
 tags:
 - user onboarding
 - UX

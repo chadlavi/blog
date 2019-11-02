@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2017-05-02
-title: 'Rebuilding Arazoo part 1: navigation'
+title: 'Rebuilding sitewide navigation in Arazoo'
 tags:
 - information architecture
 - UX
