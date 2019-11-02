@@ -2903,7 +2903,7 @@ img { max-width: 100%; vertical-align: middle; margin: 16px auto; }
 /** Figures */
 figure { margin: 32px 0; }
 
-figure img { display: block; margin-bottom: 8px; outline: 1px solid; }
+figure img { display: block; margin-bottom: 8px; }
 
 figure figcaption { font-size: 15.75px; color: #444; text-align: center; padding: 0 16px; }
 

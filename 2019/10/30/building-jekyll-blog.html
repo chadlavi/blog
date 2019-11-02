@@ -3,9 +3,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Turning github into a CMS | Chad Lavimoniere</title>
+<title>Turning github into a CMS with Jekyll and Travis-CI | Chad Lavimoniere</title>
 <meta name="generator" content="Jekyll v4.0.0" />
-<meta property="og:title" content="Turning github into a CMS" />
+<meta property="og:title" content="Turning github into a CMS with Jekyll and Travis-CI" />
 <meta name="author" content="Chad Lavimoniere" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="I originally created this blog as an excuse to experiment with the JAM stack, but I quickly realized I didn’t really need any CRUD functionality; it’s just a blog, no forms or uploads to speak of. The initial code for that never made it to a git repo, and frankly didn’t get too far past an npx create-react-app." />
@@ -16,7 +16,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-10-30T00:00:00+00:00" />
 <script type="application/ld+json">
-{"description":"I originally created this blog as an excuse to experiment with the JAM stack, but I quickly realized I didn’t really need any CRUD functionality; it’s just a blog, no forms or uploads to speak of. The initial code for that never made it to a git repo, and frankly didn’t get too far past an npx create-react-app.","@type":"BlogPosting","headline":"Turning github into a CMS","datePublished":"2019-10-30T00:00:00+00:00","url":"/blog/2019/10/30/building-jekyll-blog.html","dateModified":"2019-10-30T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/blog/2019/10/30/building-jekyll-blog.html"},"author":{"@type":"Person","name":"Chad Lavimoniere"},"@context":"https://schema.org"}</script>
+{"description":"I originally created this blog as an excuse to experiment with the JAM stack, but I quickly realized I didn’t really need any CRUD functionality; it’s just a blog, no forms or uploads to speak of. The initial code for that never made it to a git repo, and frankly didn’t get too far past an npx create-react-app.","@type":"BlogPosting","headline":"Turning github into a CMS with Jekyll and Travis-CI","datePublished":"2019-10-30T00:00:00+00:00","url":"/blog/2019/10/30/building-jekyll-blog.html","dateModified":"2019-10-30T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/blog/2019/10/30/building-jekyll-blog.html"},"author":{"@type":"Person","name":"Chad Lavimoniere"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/blog/feed.xml" title="Chad Lavimoniere" /></head>
 <body><header class="site-header" role="banner">
@@ -28,7 +28,7 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Turning github into a CMS</h1>
+    <h1 class="post-title p-name" itemprop="name headline">Turning github into a CMS with Jekyll and Travis-CI</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="2019-10-30T00:00:00+00:00" itemprop="datePublished">Oct 30, 2019
       </time><span id="byline"> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Chad Lavimoniere</span></span></span>
@@ -75,11 +75,12 @@ push build artifacts to GitHub Pages
 
 <p>It reduced my total build times from an average of 3 minutes 20 seconds to an average of 45 seconds, or about four times faster.</p>
 
-<p><img src="/blog/images/faster-builds.png" alt="screenshot showing two markedly different build times; 3 minutes and 28 seconds before this change, versus 46 seconds after." /></p>
+<figure>
+  <img src="/blog/images/faster-builds.png" alt="screenshot showing two markedly different build times; 3 minutes and 28 seconds before this change, versus 46 seconds after." />
+  <figcaption>The <a href="https://travis-ci.org/chadlavi/blog/builds/605132241" target="_blank">last  build before the change</a> had an install time of 153.21 seconds; the <a href="https://travis-ci.org/chadlavi/blog/builds/605134945" target="_blank">first build after the change</a> had an install time of <i>0.38 seconds</i>. That's roughly 400 times faster.</figcaption>
+</figure>
 
-<p>The <a href="https://travis-ci.org/chadlavi/blog/builds/605132241" target="_blank">last  build before the change</a> had an install time of 153.21 seconds; the <a href="https://travis-ci.org/chadlavi/blog/builds/605134945" target="_blank">first build after the change</a> had an install time of <em>0.38 seconds</em>. That’s roughly 400 times faster.</p>
-
-<p>You can see the full build log for this blog at <a href="https://travis-ci.org/chadlavi/blog/builds" target="_blank">https://travis-ci.org/chadlavi/blog/builds</a></p>
+<p>You can see the full build log for this blog at <a href="https://travis-ci.org/chadlavi/blog/builds" target="_blank">https://travis-ci.org/chadlavi/blog/builds</a>.</p>
 
 <h2 id="new-workflow">New workflow</h2>
 
