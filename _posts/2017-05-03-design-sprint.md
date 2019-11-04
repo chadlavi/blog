@@ -20,7 +20,7 @@ Compressing a week-long process into two days is already pretty fast-paced; but 
 
 ## The Teams
 
-There were ten people in the workshop&mdash;mostly product managers and designers, but we had at least one developer (Pete), a healthcare tech specialist, a startup founder, and a project manager. There were even three folks from www.geocaching.com who flew in from Seattle to take the workshop so they could start a design sprint _that week_.
+There were ten people in the workshop&mdash;mostly product managers and designers, but we had at least one developer (Pete), a healthcare tech specialist, a startup founder, and a project manager. There were even three folks from geocaching.com who flew in from Seattle to take the workshop so they could start a design sprint _that week_.
 
 The facilitator, Jay, split us up into two five-person teams. Besides me, my team had Sonali, a healthcare tech specialist; Maria, an office manager and future design sprint facilitator from Geocaching; Kristine, a freelance UX Designer; and Ben, the product manager at Geocaching.
 
