@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: $spacing-unit;
 
   @include under($mobile) {
     margin-bottom: $spacing-unit;
@@ -100,6 +100,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, h2, h3, h4 {
   font-family: 'Archivo Black', #{$base-font-family};
+  font-weight: 900;
 }
 
 span#byline {
@@ -152,10 +153,10 @@ a {
     }
   }
 
-  &:not([href^='#']):not([href^='/']):after, &[target="_blank"]::after {
+  &[target="_blank"]::after {
     font-family: 'Font Awesome 5 Free';
     content: "  \f35d";
-    @include relative-font-size(2/3);
+    font-size: calc(100% * 2 /3);
     vertical-align: middle;
     white-space: pre;
     display: inline-block;
@@ -164,7 +165,7 @@ a {
   }
 }
 .site-footer a {
-  &:not([href^='#']):not([href^='/']):after, &[target="_blank"]::after {
+  &[target="_blank"]::after {
     transform: translateY(-2px);
   }
 }
@@ -252,7 +253,6 @@ pre {
     display: inline-block;
     fill: $light-text;
     padding-right: 5px;
-    vertical-align: text-top;
 }
 
 .social-media-list {
