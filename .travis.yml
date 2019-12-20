@@ -2,7 +2,7 @@ language: ruby
 cache:
   directories:
     - /home/travis/.rvm/
-before_install: gem update bundler
+before_install:
 install:
   - bundle install
 script:
