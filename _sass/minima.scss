@@ -3,12 +3,12 @@
 @import "fontawesome/fontawesome.scss";
 @import "fontawesome/solid.scss";
 
-$base-font-family: 'Libre Franklin', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+$system-font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $monospace-font: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+$base-font-family: 'Libre Franklin', #{$system-font-stack};
 
 $base-font-size:   21px !default;
 $base-font-weight: 400 !default;
-$small-font-size:  $base-font-size * 0.75 !default;
 $base-line-height: 1.58 !default;
 
 $spacing-unit:     36px !default;
@@ -54,6 +54,9 @@ $tablet:          800px !default;
 
 @mixin relative-font-size($ratio) {
   font-size: $base-font-size * $ratio;
+  @include under($mobile) {
+    font-size: $base-font-size * $ratio * 0.75;
+  }
 }
 
 // Import partials.

@@ -17,6 +17,9 @@ dl, dd, ol, ul, figure {
  */
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  @include under($mobile) {
+    font: $base-font-weight #{$base-font-size * 0.75}/#{$base-line-height} $system-font-stack;
+  }
   color: $text-color;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
@@ -38,9 +41,8 @@ p, blockquote,
 ul, ol, dl, figure,
 %vertical-rhythm {
   margin-bottom: $spacing-unit;
-
   @include under($mobile) {
-    margin-bottom: $spacing-unit;
+    margin-bottom: $spacing-unit * 0.75;
   }
 }
 
@@ -65,12 +67,15 @@ img {
  */
 figure { 
   margin: $spacing-unit 0;
+  @include under($mobile) {
+    margin: #{$spacing-unit * 0.75} 0;
+  }
   img {
     display: block;
     margin-bottom: $spacing-unit / 4;
   }
   figcaption {
-    font-size: $small-font-size;
+    @include relative-font-size(75/100);
     color: $light-text;
     text-align: center;
     padding: 0 $spacing-unit / 2;
@@ -100,6 +105,9 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, h2, h3, h4 {
   font-family: 'Archivo Black', #{$base-font-family};
+  @include under($mobile) {
+    font-family: $system-font-stack;
+  }
   font-weight: 900;
 }
 
@@ -202,6 +210,9 @@ code {
 
 pre {
   margin: $spacing-unit auto;
+  @include under($mobile) {
+    margin: #{$spacing-unit * 0.75} auto;
+  }
   border-radius: 8px;
   padding: 8px 12px;
   overflow-x: auto;
