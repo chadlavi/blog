@@ -1,10 +1,9 @@
 language: ruby
+rvm:
+  - 2.6
 cache:
   directories:
     - /home/travis/.rvm/
-before_install:
-install:
-  - bundle install
 script:
   - "jekyll build"
 branches:
