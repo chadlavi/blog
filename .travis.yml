@@ -4,8 +4,11 @@ rvm:
 cache:
   directories:
     - /home/travis/.rvm/
+before_install:
+install:
+  - bundle install
 script:
-  - "jekyll build"
+  - "bundle exec jekyll build"
 branches:
   only:
   - master
