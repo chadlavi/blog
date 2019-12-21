@@ -2887,12 +2887,14 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { m
 *:focus { outline: none; }
 
 /** Basic styling */
-body { font: 400 21px/1.58 "Libre Franklin", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; color: #111; background-color: white; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; }
+body { font: 400 21px/1.58 "Libre Franklin", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol; color: #111; background-color: white; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; }
+
+@media screen and (max-width: 600px) { body { font: 400 15.75px/1.58 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; } }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6, p, blockquote, ul, ol, dl, figure { margin-bottom: 36px; }
 
-@media screen and (max-width: 600px) { h1, h2, h3, h4, h5, h6, p, blockquote, ul, ol, dl, figure { margin-bottom: 36px; } }
+@media screen and (max-width: 600px) { h1, h2, h3, h4, h5, h6, p, blockquote, ul, ol, dl, figure { margin-bottom: 27px; } }
 
 /** `main` element */
 main { display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */ }
@@ -2903,9 +2905,13 @@ img { max-width: 100%; vertical-align: middle; margin: 18px auto; }
 /** Figures */
 figure { margin: 36px 0; }
 
+@media screen and (max-width: 600px) { figure { margin: 27px 0; } }
+
 figure img { display: block; margin-bottom: 9px; }
 
 figure figcaption { font-size: 15.75px; color: #444; text-align: center; padding: 0 18px; }
+
+@media screen and (max-width: 600px) { figure figcaption { font-size: 11.8125px; } }
 
 /** Lists */
 ul, ol { margin-left: 18px; }
@@ -2916,6 +2922,8 @@ li > ul, li > ol { margin-bottom: 0; }
 h1, h2, h3, h4, h5, h6 { font-weight: 400; }
 
 h1, h2, h3, h4 { font-family: "Archivo Black", Libre Franklin, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol; font-weight: 900; }
+
+@media screen and (max-width: 600px) { h1, h2, h3, h4 { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; } }
 
 span#byline { display: none; }
 
@@ -2945,14 +2953,20 @@ a[target="_blank"]::after { font-family: 'Font Awesome 5 Free'; content: "  \f35
 /** Blockquotes */
 blockquote { color: #444; border-left: 4px solid #e8e8e8; padding-left: 18px; font-size: 23.3333333333px; }
 
+@media screen and (max-width: 600px) { blockquote { font-size: 17.5px; } }
+
 blockquote > :last-child { margin-bottom: 0; }
 
 /** Code formatting */
 pre, code { font-size: 18.6666666667px; border: 2px solid #e8e8e8; border-radius: 4px; background-color: #f9f9fb; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
 
+@media screen and (max-width: 600px) { pre, code { font-size: 14px; } }
+
 code { padding: 1px 5px; }
 
 pre { margin: 36px auto; border-radius: 8px; padding: 8px 12px; overflow-x: auto; }
+
+@media screen and (max-width: 600px) { pre { margin: 27px auto; } }
 
 pre > code { border: 0; padding-right: 0; padding-left: 0; background-color: unset; }
 
@@ -3012,16 +3026,24 @@ table td { border: 1px solid #e8e8e8; }
 
 .tags { margin-top: 72px; }
 
+@media screen and (max-width: 600px) { .tags { margin-top: 54px; } }
+
 .tags .title { font-size: 90%; font-weight: bold; letter-spacing: 0.7px; margin-bottom: 4.5px; text-transform: uppercase; }
 
 /** Site footer */
 .site-footer { font-size: 15.75px; padding: 72px 0 0 0; margin-top: 72px; background: #111; color: white; }
+
+@media screen and (max-width: 600px) { .site-footer { font-size: 11.8125px; } }
+
+@media screen and (max-width: 600px) { .site-footer { padding: 54px 0 0 0; margin-top: 54px; } }
 
 .site-footer a, .site-footer a:visited { color: #6e6bff; }
 
 .site-footer a:focus, .site-footer a:visited:focus { box-shadow: 0 0 0 2px white, 0 0 0 5px #6e6bff; }
 
 .footer-heading { font-size: 21px; margin-bottom: 18px; }
+
+@media screen and (max-width: 600px) { .footer-heading { font-size: 15.75px; } }
 
 .contact-list, .social-media-list { list-style: none; margin-left: 0; }
 
@@ -3043,13 +3065,19 @@ table td { border: 1px solid #e8e8e8; }
 
 .page-heading { font-size: 42px; }
 
+@media screen and (max-width: 600px) { .page-heading { font-size: 31.5px; } }
+
 .post-list-heading { font-size: 36.75px; }
+
+@media screen and (max-width: 600px) { .post-list-heading { font-size: 27.5625px; } }
 
 .post-list { margin: 36px 0; list-style: none; }
 
 .post-list > li { margin-bottom: 36px; }
 
 .post-meta { font-size: 15.75px; color: #757575; }
+
+@media screen and (max-width: 600px) { .post-meta { font-size: 11.8125px; } }
 
 .post-link { margin-bottom: 0; line-height: 1; font-size: 129%; font-family: inherit; font-weight: normal; }
 
@@ -3058,19 +3086,31 @@ table td { border: 1px solid #e8e8e8; }
 /** Posts */
 .post-header { margin-bottom: 36px; }
 
-.post-title { font-size: 52.5px; letter-spacing: -1px; line-height: 1; font-weight: bold; margin-bottom: 9px; }
+.post-title { font-size: 52.5px; letter-spacing: -1px; line-height: 1; margin-bottom: 9px; }
+
+@media screen and (max-width: 600px) { .post-title { font-size: 39.375px; } }
 
 @media screen and (max-width: 800px) { .post-title { font-size: 47.25px; } }
+
+@media screen and (max-width: 800px) and (max-width: 600px) { .post-title { font-size: 35.4375px; } }
 
 .post-content { margin-bottom: 36px; }
 
 .post-content h2 { font-size: 31.5px; }
 
+@media screen and (max-width: 600px) { .post-content h2 { font-size: 23.625px; } }
+
 .post-content * + h2, .post-content * + h3, .post-content * + h4, .post-content h2:first-child { margin: 54px 0 9px 0; }
+
+@media screen and (max-width: 600px) { .post-content * + h2, .post-content * + h3, .post-content * + h4, .post-content h2:first-child { margin: 40.5px 0 6.75px 0; } }
 
 .post-content h3 { font-size: 26.25px; }
 
+@media screen and (max-width: 600px) { .post-content h3 { font-size: 19.6875px; } }
+
 .post-content h4 { font-size: 23.1px; }
+
+@media screen and (max-width: 600px) { .post-content h4 { font-size: 17.325px; } }
 
 .post-content li { margin-bottom: 9px; }
 
