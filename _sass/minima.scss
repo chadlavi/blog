@@ -5,19 +5,19 @@
 
 $system-font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $monospace-font: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-$base-font-family: 'Libre Franklin', #{$system-font-stack};
+$base-font-family: 'Roboto', #{$system-font-stack};
 
 $base-font-size:   21px !default;
-$base-font-weight: 400 !default;
+$base-font-weight: 500 !default;
 $base-line-height: 1.58 !default;
 
 $spacing-unit:     36px !default;
 
-$black:            #111 !default;
+$black:            black !default;
 $white:            white !default;
 $text-color:       $black;
 $light-text:       #444 !default;
-$background-color: white !default;
+$background-color: $white !default;
 $brand-color:      #5551ff !default;
 $brand-color-on-black: lighten($brand-color, 5%) !default;
 
@@ -61,7 +61,6 @@ $tablet:          800px !default;
 
 // Import partials.
 @import
-  "minima/fonts",
   "minima/base",
   "minima/layout",
   "minima/syntax-highlighting",

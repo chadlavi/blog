@@ -229,7 +229,7 @@
   line-height: 1;
   font-size: 129%;
   font-family: inherit;
-  font-weight: normal;
+  font-weight: $base-font-weight;
   & a:focus {
     display: inline-block;
   }
