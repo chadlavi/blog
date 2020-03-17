@@ -13,16 +13,8 @@ $base-line-height: 1.58 !default;
 
 $spacing-unit:     36px !default;
 
---black: black;
---white: white;
-
-@media (prefers-color-scheme: dark) {
-  --black: white;
-  --white: black;
-}
-
-$black:            var(--black) !default;
-$white:            var(--white) !default;
+$black:            black !default;
+$white:            white !default;
 $text-color:       $black;
 $light-text:       #444 !default;
 $background-color: $white !default;
