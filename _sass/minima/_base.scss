@@ -31,6 +31,25 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  @media (prefers-color-scheme: dark) {
+    a, a:visited, a:active {
+      color: $brand-color-on-black;
+    }
+    color: lighten($background-color, 80%);
+    font-weight: 400;
+    background-color: $text-color;
+    & code, & pre code, & .highlight {
+      background: lighten($text-color, 10%) !important;
+      background-color: lighten($text-color, 10%);
+      border-color: lighten($text-color, 30%);
+    }
+    figure figcaption {
+      color: $grey-color;
+    }
+    footer.site-footer {
+      background: lighten($text-color, 5%);
+    }
+  }
 }
 
 /**
@@ -195,6 +214,10 @@ blockquote {
 /**
  * Code formatting
  */
+p>code {
+  display: inline-block;
+}
+
 pre,
 code {
   @include relative-font-size(8/9);
