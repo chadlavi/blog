@@ -2889,7 +2889,10 @@ body { font: 500 21px/1.58 "Roboto", -apple-system, BlinkMacSystemFont, Segoe UI
   body a, body a:visited, body a:active { color: #6e6bff; }
   body code, body pre code, body .highlight { background: #1a1a1a !important; background-color: #1a1a1a; border-color: #4d4d4d; }
   body figure figcaption { color: #757575; }
-  body footer.site-footer { background: #0d0d0d; } }
+  body footer.site-footer { background: #0d0d0d; }
+  body img { filter: brightness(0.85); } }
+
+@media screen and (min-width: 600px) { .right { text-align: right; } }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6, p, blockquote, ul, ol, dl, figure { margin-bottom: 36px; }
@@ -2900,7 +2903,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, ul, ol, dl, figure { margin-bottom: 36px;
 main { display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */ }
 
 /** Images */
-img { max-width: 100%; vertical-align: middle; margin: 18px auto; }
+article img { max-width: 100%; vertical-align: middle; margin: 18px auto; }
 
 /** Figures */
 figure { margin: 36px 0; }
@@ -3047,11 +3050,13 @@ table td { border: 1px solid #e8e8e8; }
 
 @media screen and (max-width: 600px) { .footer-heading { font-size: 15.75px; } }
 
-.contact-list, .social-media-list { list-style: none; margin-left: 0; }
+.contact-list, .social-media-list { list-style: none; margin: 0; }
 
 .footer-col-wrapper { margin-left: -18px; }
 
 .footer-col { float: left; margin-bottom: 18px; padding-left: 18px; }
+
+.footer-col p { margin-bottom: 0; }
 
 .footer-col-1 { width: -webkit-calc(40% - (36px / 2)); width: calc(40% - (36px / 2)); }
 
