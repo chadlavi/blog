@@ -49,6 +49,15 @@ body {
     footer.site-footer {
       background: lighten($text-color, 5%);
     }
+    img {
+      filter: brightness(0.85);
+    }
+  }
+}
+
+.right {
+  @include over($mobile){
+    text-align: right;
   }
 }
 
@@ -75,7 +84,7 @@ main {
 /**
  * Images
  */
-img {
+article img {
   max-width: 100%;
   vertical-align: middle;
   margin: #{$spacing-unit / 2} auto;
