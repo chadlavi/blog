@@ -8,7 +8,7 @@ tags:
 ---
 
 ## prsnt.app promotional video
-When we first started working on <a href="https://prsnt.app" target="_blank">prsnt.app</a>, my cofounder Pete made a simple screencap explainer video to show how it worked. It was simple, it was quick, it was cheap. 
+When we first started working on [prsnt.app](https://prsnt.app), my cofounder Pete made a simple screencap explainer video to show how it worked. It was simple, it was quick, it was cheap. 
 
 But when we started to gain traction, it became clear that we needed to make a more polished looking video. 
 
@@ -25,7 +25,7 @@ I also made a brief video tag for prsnt.app, so that others can append it to the
 
 ## Arazoo.com promotional video
 
-This is a video I produced for us at Arazoo.com back in late 2016/early 2017. The video was shot and edited by my friend <a href="https://www.noahtherrien.com/" target="_blank">Noah Therrien</a> at <a href="http://www.sandenwolff.com" target="_blank">Sanden Wolff</a>. I wrote the script for this video, recruited/managed talent, and reviewed/critiqued edits.
+This is a video I produced for us at Arazoo.com back in late 2016/early 2017. The video was shot and edited by my friend [Noah Therrien](https://www.noahtherrien.com/) at [Sanden Wolff](http://www.sandenwolff.com). I wrote the script for this video, recruited/managed talent, and reviewed/critiqued edits.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Tch2cxOHXA8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 

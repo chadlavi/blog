@@ -8,7 +8,7 @@ tags:
 ---
 
 
-In April 2017, my colleague Pete and I were able to go to <a href="http://www.newhaircut.com/design-sprint-academy/about-us" target="_blank">New Haircut's "Immersive Design Sprint" Workshop</a> here in New York, to learn about how we can start using design sprints at <a href="https://arazoo.com" target="_blank">Arazoo</a>.
+In April 2017, my colleague Pete and I were able to go to [New Haircut's "Immersive Design Sprint" Workshop](http://www.newhaircut.com/design-sprint-academy/about-us) here in New York, to learn about how we can start using design sprints at [Arazoo](https://arazoo.com).
 
 From the workshop description:
 
@@ -56,7 +56,7 @@ The sprint questions are the checklist of items you test against at the end of t
 
 You make a customer journey map by taking the end goal you want your users to achieve and mapping out the high-level steps between their problem and your solution. This becomes the rough framework for the sketching you do later.
 
-At the end of the first day, you bring in "the experts," i.e., the people whose experience and input is important on this, but who couldn't be in the room for the rest of the process. As a design sprint group, interview each of them one at a time about what you've come up with, and capture some "how might we"s (cf. <a href="http://www.designkit.org/methods/3" target="_blank">http://www.designkit.org/methods/3</a>). Refine and fill in the customer journey map by identifying the top "How might we"s and adding them to the map at the appropriate steps. This will help target what step in the process should be the focus.
+At the end of the first day, you bring in "the experts," i.e., the people whose experience and input is important on this, but who couldn't be in the room for the rest of the process. As a design sprint group, interview each of them one at a time about what you've come up with, and capture some "how might we"s (cf. <http://www.designkit.org/methods/3>). Refine and fill in the customer journey map by identifying the top "How might we"s and adding them to the map at the appropriate steps. This will help target what step in the process should be the focus.
 
 ## Design Sprint Day 2 - Sketching
 
@@ -67,7 +67,7 @@ The team breaks out to do some individual look and feel research and brings it a
   <figcaption>Sketching with my team. Ben, me and Kristine (back), Sonali and Maria (front)</figcaption>
 </figure>
 
-Then we all individually took notes on what aspects of the research seemed most useful to us, doodled ideas and tried to come up with as many possible (and even not-necessarily-possible) solutions to the problem as we could. (See <a href="https://library.gv.com/the-product-design-sprint-diverge-day-2-c7a5df8e7cd0" target="_blank">https://library.gv.com/the-product-design-sprint-diverge-day-2-c7a5df8e7cd0</a> for details.) The ending part, with the voting and stickers, we actually did as part of "Day 3" in the workshop.
+Then we all individually took notes on what aspects of the research seemed most useful to us, doodled ideas and tried to come up with as many possible (and even not-necessarily-possible) solutions to the problem as we could. (See <https://library.gv.com/the-product-design-sprint-diverge-day-2-c7a5df8e7cd0> for details.) The ending part, with the voting and stickers, we actually did as part of "Day 3" in the workshop.
 
 ## Design Sprint Day 3 - Deciding
 
@@ -78,7 +78,7 @@ The way we did the "Deciding" day started with the voting process described in t
   <figcaption>Votes on our customer journey map</figcaption>
 </figure>
 
-In all honesty, we sort of sped through this part of the process in the workshop. In my team in the workshop, I think in part because this was a low-stakes environment, so there wasn't really as much conflict as you might expect in a real team where a real product and real career decisions are in play. I think the conflict gathering thing mentioned in the <a href="https://library.gv.com/the-product-design-sprint-decide-day-3-7d4804bd2fd1#d8e7" target="_blank">GV blog</a> is an interesting one, I'd like to try it on my team.
+In all honesty, we sort of sped through this part of the process in the workshop. In my team in the workshop, I think in part because this was a low-stakes environment, so there wasn't really as much conflict as you might expect in a real team where a real product and real career decisions are in play. I think the conflict gathering thing mentioned in the [GV blog](https://library.gv.com/the-product-design-sprint-decide-day-3-7d4804bd2fd1#d8e7) is an interesting one, I'd like to try it on my team.
 
 <figure>
   <img src="{{site.baseurl}}/images/2017/05/03/3.jpg" alt="photo of my hand-drawn phone screen wireframe" />
@@ -111,8 +111,8 @@ Since the workshop was compressed into 2 days of teaching and trying, days 3-5 w
   <figcaption>My team's prototype</figcaption>
 </figure>
 
-We each only had time for 2 users to test the designs, though of course you'd have more in a real design sprint&mdash;ideally, 5 or 6. One person conducted the interview, while the others observed and took notes. We took notes on stickynotes and placed them on a <a href="https://library.gv.com/the-product-design-sprint-validate-day-5-761292b20d05#98b0" target="_blank">"scoreboard"</a>. At the end we worked through what worked and what didn't.
+We each only had time for 2 users to test the designs, though of course you'd have more in a real design sprint&mdash;ideally, 5 or 6. One person conducted the interview, while the others observed and took notes. We took notes on stickynotes and placed them on a ["scoreboard"](https://library.gv.com/the-product-design-sprint-validate-day-5-761292b20d05#98b0). At the end we worked through what worked and what didn't.
 
 And that's the end of a design sprint! The next step is a smaller iteration on the findings from the user testing, and then ideally it goes to development. Or, not as ideally, you've figured out that the idea was bad&mdash;so back to step one you go.
 
-My team's final prototype: <a href="https://invis.io/5KBI7THM4#/231373346_1_-_Relationship" target="_blank">https://invis.io/5KBI7THM4#/231373346_1_-_Relationship</a>
+My team's final prototype: <https://invis.io/5KBI7THM4#/231373346_1_-_Relationship>

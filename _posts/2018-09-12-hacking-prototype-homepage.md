@@ -58,7 +58,7 @@ I made a single-page homepage with a few hero sections for the big features; the
   <figcaption>highly speculative mockups</figcaption>
 </figure>
 
-I put all this in a <a href="https://github.com/chadlavi/lutrus" target="_blank">git repository</a>.
+I put all this in a [git repository](https://github.com/chadlavi/lutrus).
 
 ### LAMP but without the AM (and a different P)
 

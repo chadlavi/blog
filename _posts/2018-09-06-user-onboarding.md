@@ -7,7 +7,7 @@ tags:
 - UX
 ---
 
-When we launched <a href="https://prsnt.app" target="_blank">prsnt.app</a> to the public in August 2018, it was a seismic shift in how we brought users into the app.
+When we launched [prsnt.app](https://prsnt.app) to the public in August 2018, it was a seismic shift in how we brought users into the app.
 
 Until then, we had been in a closed beta. We sought out connections we had in the interior design industry, asked for referrals, scoured Houzz and local lists for people to reach out to--in short, we scrounged up a group of early adopter users by hook and by crook in the earliest days of prsnt, and that gave us a certain advantage in terms of developmental economy; because these people heard and awful lot about prsnt before they started using it, and because they were qualified by us to make sure they were the kind of people who would want to use it, we were able to skip a lot of the things you traditionally need to put in place. There was no signup process, no in-app training or example, and no need to collect email addresses. We were already in constant contact with those early users, and we had explained the app to death by the time we let them touch it. 
 

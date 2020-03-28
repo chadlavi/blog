@@ -190,19 +190,12 @@ a {
   }
 
   &[target="_blank"]::after {
-    font-family: 'Font Awesome 5 Free';
-    content: "  \f35d";
-    font-size: calc(100% * 2 /3);
-    vertical-align: middle;
-    white-space: pre;
-    display: inline-block;
-    transform: translateY(-1px);
-    margin-right: 2px;
+    content: " [\2197]";
   }
 }
 .site-footer a {
-  &[target="_blank"]::after {
-    transform: translateY(-2px);
+  img {
+    vertical-align: middle;
   }
 }
 

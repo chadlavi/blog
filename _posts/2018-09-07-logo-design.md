@@ -7,7 +7,7 @@ tags:
 - graphic design
 ---
 
-When we started <a href="https://prsnt.app" target="_blank">prsnt.app</a>, we didn't really have a logo in mind; originally, it was just a hacky prototype that ran on our local machines, with no users, no marketing or public pages, just the core layout manipulation functionality and web-clipping functionality.
+When we started [prsnt.app](https://prsnt.app), we didn't really have a logo in mind; originally, it was just a hacky prototype that ran on our local machines, with no users, no marketing or public pages, just the core layout manipulation functionality and web-clipping functionality.
 
 As we started getting interest from potential early adopters, though, we pretty rapidly needed to throw together a hosted version of the app. The very first hosted version at prsnt.app was actually not much more than what we'd run on our macbooks: no user, no login, just a url where you could go and play with the functionality. We shared this with a few early users at interior design firms, but they almost immediately said, "I really want to be able to like, you know, _actually do stuff_ with this."
 
