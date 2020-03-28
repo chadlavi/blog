@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>A simple yarn link status script to keep you from going crazy | Chad Lavimoniere</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="A simple yarn link status script to keep you from going crazy" />
+<meta name="author" content="Chad Lavimoniere" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="As a library developer, managing your yarn linked libraries can be tough. I often have my front-end library yarn-linked into one or more of my company’s FE apps locally to test out changes, but there’s no simple utility to tell you what libraries are currently yarn-linked, much less to tell you whether there are any yarn-linked packages in use in your current app. If something is broken, it could be difficult to tell if it’s broken in the deployed version of the library or in the local version I’ve yarn linked. Did I yarn link the library into this project last week and forget to remove the link?" />
+<meta property="og:description" content="As a library developer, managing your yarn linked libraries can be tough. I often have my front-end library yarn-linked into one or more of my company’s FE apps locally to test out changes, but there’s no simple utility to tell you what libraries are currently yarn-linked, much less to tell you whether there are any yarn-linked packages in use in your current app. If something is broken, it could be difficult to tell if it’s broken in the deployed version of the library or in the local version I’ve yarn linked. Did I yarn link the library into this project last week and forget to remove the link?" />
+<link rel="canonical" href="/blog/2020/03/28/yarn-link.html" />
+<meta property="og:url" content="/blog/2020/03/28/yarn-link.html" />
+<meta property="og:site_name" content="Chad Lavimoniere" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-03-28T00:00:00+00:00" />
+<script type="application/ld+json">
+{"headline":"A simple yarn link status script to keep you from going crazy","dateModified":"2020-03-28T00:00:00+00:00","description":"As a library developer, managing your yarn linked libraries can be tough. I often have my front-end library yarn-linked into one or more of my company’s FE apps locally to test out changes, but there’s no simple utility to tell you what libraries are currently yarn-linked, much less to tell you whether there are any yarn-linked packages in use in your current app. If something is broken, it could be difficult to tell if it’s broken in the deployed version of the library or in the local version I’ve yarn linked. Did I yarn link the library into this project last week and forget to remove the link?","datePublished":"2020-03-28T00:00:00+00:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/blog/2020/03/28/yarn-link.html"},"url":"/blog/2020/03/28/yarn-link.html","author":{"@type":"Person","name":"Chad Lavimoniere"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blog/assets/main.css">
+  <script src="/blog/assets/script.js" defer></script><link type="application/atom+xml" rel="alternate" href="/blog/feed.xml" title="Chad Lavimoniere" /></head><body><header class="site-header" role="banner">
+
+  <div class="wrapper"><div class="site-title"><a rel="author" href="/blog/">Chad Lavimoniere</a></div></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">A simple yarn link status script to keep you from going crazy</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2020-03-28T00:00:00+00:00" itemprop="datePublished">Mar 28, 2020
+      </time><span id="byline"> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Chad Lavimoniere</span></span></span>
+        
+    </p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>As a library developer, managing your <code class="highlighter-rouge">yarn link</code>ed libraries can be tough. I often have my front-end library yarn-linked into one or more of my company’s FE apps locally to test out changes, but there’s no simple utility to tell you what libraries are currently yarn-linked, much less to tell you whether there are any yarn-linked packages in use in your current app. If something is broken, it could be difficult to tell if it’s broken <em>in the deployed version</em> of the library or <em>in the local version I’ve yarn linked</em>. Did I yarn link the library into this project last week and forget to remove the link?</p>
+
+<p>Even though <a href="https://dev.to/arcanis/introducing-yarn-2-4eh1#improved-peer-dependency-links">peer dependencies work with <code class="highlighter-rouge">yarn link</code> as of yarn v2</a>, I used to go through a lot of annoying trouble to answer the simle question, <em>what is currently yarn linked, and what yarn links are currently used in this project?</em></p>
+
+<p>So I created this bash script. I have this function defined in my dotfiles; I can run <code class="highlighter-rouge">yarnlinks</code> in any directory on my mac and see (1) what libraries are currently being linked (and where they’re linked from) and (2) what libraries, if any, are currently being used as yarn links in the current yarn project.</p>
+
+<p>The yarnlinks script:</p>
+
+<script src="https://gist.github.com/chadlavi/6b74e9ccbbf600c3bd1ee4f081039d95.js"></script>
+
+
+  </div><div id="tags" class="post-meta tags">
+    <p class="title">Topics</p>
+    
+      <a class="tag" href="/blog/tag/react">react</a>
+    
+      <a class="tag" href="/blog/tag/yarn">yarn</a>
+    
+      <a class="tag" href="/blog/tag/yarn link">yarn link</a>
+    
+      <a class="tag" href="/blog/tag/development">development</a>
+    
+  </div><a class="u-url" href="/blog/2020/03/28/yarn-link.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blog/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Chad Lavimoniere</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1"><ul class="social-media-list"><li><a href="https://github.com/chadlavi"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg> <span class="username">chadlavi</span></a></li><li><a href="https://github.com/chadlavi-casebook"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg> <span class="username">chadlavi-casebook</span></a></li><li><a href="https://www.twitter.com/chadlavimoniere"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">chadlavimoniere</span></a></li><li><a href="/blog/feed.xml" target="_blank"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#rss"></use></svg> <span>RSS</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-2"><p>Design engineer, library maintainer. Formerly freelance, currently design system and frontend component library maintainer at <a href="https://casebook.net">Casebook</a>.</p>
+</div>
+    </div>
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1"></div>
+      <div class="footer-col footer-col-2 right">
+        <a href="https://github.com/chadlavi/blog">
+          <img alt="build status" src="https://travis-ci.org/chadlavi/blog.svg?branch=master">
+        </a>
+      </div>
+    </div>
+
+
+  </div>
+
+</footer>
+</body>
+
+</html>

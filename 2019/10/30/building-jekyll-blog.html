@@ -18,8 +18,8 @@
 <script type="application/ld+json">
 {"headline":"Turning github into a CMS with Jekyll and Travis-CI","dateModified":"2019-10-30T00:00:00+00:00","description":"I originally created this blog as an excuse to experiment with the JAM stack, but I quickly realized I didn’t really need any CRUD functionality; it’s just a blog, no forms or uploads to speak of. The initial code for that never made it to a git repo, and frankly didn’t get too far past an npx create-react-app.","datePublished":"2019-10-30T00:00:00+00:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"/blog/2019/10/30/building-jekyll-blog.html"},"url":"/blog/2019/10/30/building-jekyll-blog.html","author":{"@type":"Person","name":"Chad Lavimoniere"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/blog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/blog/feed.xml" title="Chad Lavimoniere" /></head>
-<body><header class="site-header" role="banner">
+<link rel="stylesheet" href="/blog/assets/main.css">
+  <script src="/blog/assets/script.js" defer></script><link type="application/atom+xml" rel="alternate" href="/blog/feed.xml" title="Chad Lavimoniere" /></head><body><header class="site-header" role="banner">
 
   <div class="wrapper"><div class="site-title"><a rel="author" href="/blog/">Chad Lavimoniere</a></div></div>
 </header>
@@ -37,9 +37,9 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>I originally created this blog as an excuse to experiment with <a href="https://jamstack.org/" target="_blank">the JAM stack</a>, but I quickly realized I didn’t really need any CRUD functionality; it’s just a blog, no forms or uploads to speak of. The initial code for that never made it to a git repo, and frankly didn’t get too far past an <code class="highlighter-rouge">npx create-react-app</code>.</p>
+    <p>I originally created this blog as an excuse to experiment with <a href="https://jamstack.org/">the JAM stack</a>, but I quickly realized I didn’t really need any CRUD functionality; it’s just a blog, no forms or uploads to speak of. The initial code for that never made it to a git repo, and frankly didn’t get too far past an <code class="highlighter-rouge">npx create-react-app</code>.</p>
 
-<p>I still wanted to create a fast, responsive, accessible site that’s templatized and just needs markdown changes to create new stuff. My <a href="https://github.com/chadlavi/chadlavimoniere.com" target="_blank">old blog</a> was an experiment in using the LAMP stack to do something sort of like this, but it was really cumbersome; I ended up storing the markdown content for the posts in a MySQL database, so it was still fairly technologically intensive to update.</p>
+<p>I still wanted to create a fast, responsive, accessible site that’s templatized and just needs markdown changes to create new stuff. My <a href="https://github.com/chadlavi/chadlavimoniere.com">old blog</a> was an experiment in using the LAMP stack to do something sort of like this, but it was really cumbersome; I ended up storing the markdown content for the posts in a MySQL database, so it was still fairly technologically intensive to update.</p>
 
 <h2 id="jekyll--github-pages">Jekyll + GitHub Pages</h2>
 
@@ -66,7 +66,7 @@ push build artifacts to GitHub Pages
 
 <h2 id="caching">Caching</h2>
 
-<p>Probably the most important improvement I made in the whole process was to set up Travis CI to cache correctly! I ended up doing <a href="https://docs.travis-ci.com/user/caching#cache-rvm-ruby-version-for-non-ruby-projects" target="_blank">this</a>:</p>
+<p>Probably the most important improvement I made in the whole process was to set up Travis CI to cache correctly! I ended up <a href="https://docs.travis-ci.com/user/caching#cache-rvm-ruby-version-for-non-ruby-projects">doing this</a>:</p>
 
 <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">cache</span><span class="pi">:</span>
   <span class="na">directories</span><span class="pi">:</span>
@@ -77,10 +77,10 @@ push build artifacts to GitHub Pages
 
 <figure>
   <img src="/blog/images/faster-builds.png" alt="screenshot showing two markedly different build times; 3 minutes and 28 seconds before this change, versus 46 seconds after." />
-  <figcaption>The <a href="https://travis-ci.org/chadlavi/blog/builds/605132241" target="_blank">last  build before the change</a> had an install time of 153.21 seconds; the <a href="https://travis-ci.org/chadlavi/blog/builds/605134945" target="_blank">first build after the change</a> had an install time of <i>0.38 seconds</i>. That's roughly 400 times faster.</figcaption>
+  <figcaption>The [last build before the change](https://travis-ci.org/chadlavi/blog/builds/605132241) had an install time of 153.21 seconds; the [first build after the change](https://travis-ci.org/chadlavi/blog/builds/605134945) had an install time of <i>0.38 seconds</i>. That's roughly 400 times faster.</figcaption>
 </figure>
 
-<p>You can see the full build log for this blog at <a href="https://travis-ci.org/chadlavi/blog/builds" target="_blank">https://travis-ci.org/chadlavi/blog/builds</a>.</p>
+<p>You can see the full build log for this blog at <a href="https://travis-ci.org/chadlavi/blog/builds">https://travis-ci.org/chadlavi/blog/builds</a>.</p>
 
 <h2 id="new-workflow">New workflow</h2>
 
@@ -109,10 +109,10 @@ push build artifacts to GitHub Pages
     <h2 class="footer-heading">Chad Lavimoniere</h2>
 
     <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1"><ul class="social-media-list"><li><a target="_blank" href="https://github.com/chadlavi"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg> <span class="username">chadlavi</span></a></li><li><a target="_blank" href="https://github.com/chadlavi-casebook"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg> <span class="username">chadlavi-casebook</span></a></li><li><a target="_blank" href="https://www.twitter.com/chadlavimoniere"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">chadlavimoniere</span></a></li><li><a target="_blank" href="/blog/feed.xml"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#rss"></use></svg> <span>RSS</span></a></li></ul>
+      <div class="footer-col footer-col-1"><ul class="social-media-list"><li><a href="https://github.com/chadlavi"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg> <span class="username">chadlavi</span></a></li><li><a href="https://github.com/chadlavi-casebook"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg> <span class="username">chadlavi-casebook</span></a></li><li><a href="https://www.twitter.com/chadlavimoniere"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">chadlavimoniere</span></a></li><li><a href="/blog/feed.xml" target="_blank"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#rss"></use></svg> <span>RSS</span></a></li></ul>
 </div>
 
-      <div class="footer-col footer-col-2"><p>Design engineer, library maintainer. Formerly freelance, currently design system and frontend component library maintainer at <a href="https://casebook.net" target="_blank">Casebook</a>.</p>
+      <div class="footer-col footer-col-2"><p>Design engineer, library maintainer. Formerly freelance, currently design system and frontend component library maintainer at <a href="https://casebook.net">Casebook</a>.</p>
 </div>
     </div>
     <div class="footer-col-wrapper">
