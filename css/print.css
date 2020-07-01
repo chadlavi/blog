@@ -1,0 +1,65 @@
+
+@media print {
+  div.wrapper {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  a {
+    color: inherit !important;
+  }
+  a:not(.tag):not([rel=author]) {
+    text-decoration: underline !important;
+  }
+  a:not(.tag):not([rel=author])::after {
+    content: " (" attr(href) ") " !important;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    vertical-align: unset !important;
+  }
+  a.tag {
+    color: inherit;
+    padding: inherit;
+    background: none;
+    font-size: inherit;
+    margin: none;
+  }
+  a.tag:not(:last-child):after {
+    content: ",";
+  }
+
+  blockquote {
+    color: inherit;
+    border-left: 4px solid;
+  }
+
+  h1 {
+    font-size: 31.5px !important;
+  }
+
+  pre, code {
+    border: 1px solid;
+    background: none;
+  }
+
+  span#byline {
+    display: inline;
+  }
+
+  .post-meta {
+    color: inherit;
+    font-size: inherit;
+  }
+
+  .tags .title {
+    display: inline;
+    text-transform: none;
+  }
+  .tags .title:after {
+    content: ":";
+  }
+
+  .site-header, .site-footer {
+    display: none;
+  }
+}

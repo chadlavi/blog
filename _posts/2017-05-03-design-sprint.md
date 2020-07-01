@@ -29,7 +29,7 @@ The facilitator, Jay, split us up into two five-person teams. Besides me, my tea
 At the beginning of the first day of the workshop, Jay gave us a little exercise: he had us look through some photos from his friend's apartment, and try to pick out some things that gave hints about the person's life and preferences. This was sort of a warm-up in doing careful observation and user empathy. It turns out it was the apartment of Jay's friend Markus, in Romania.
 
 <figure>
-  <img src="{{site.baseurl}}/images/2017/05/03/7.jpg" alt="Doing some (canned) user research with my team. Ben and Kristine (top), Kristine, Me, Sonali and Maria (bottom)" />
+  <img src="{{ site.github.baseurl }}/images/2017/05/03/7.jpg" alt="Doing some (canned) user research with my team. Ben and Kristine (top), Kristine, Me, Sonali and Maria (bottom)" />
   <figcaption>Doing some (canned) user research with my team. Ben and Kristine (top), Kristine, Me, Sonali and Maria (bottom)</figcaption>
 </figure>
 
@@ -38,7 +38,7 @@ We watched a video of Markus being interviewed about gift-giving, and this is wh
 While we watched the video, we jotted down on sticky notes all of our impressions of what Markus was thinking, saying, doing, and feeling in the interview video.
 
 <figure>
-  <img src="{{site.baseurl}}/images/2017/05/03/2.jpg" />
+  <img src="{{ site.github.baseurl }}/images/2017/05/03/2.jpg" />
   <figcaption>Markus, in sticky note form</figcaption>
 </figure>
 
@@ -63,7 +63,7 @@ At the end of the first day, you bring in "the experts," i.e., the people whose 
 The team breaks out to do some individual look and feel research and brings it all back to the group. We used a slack channel for this, just binging images and links that seemed at all relevant to what we were doing, and then we all worked through them together to see what we could glean from it.
 
 <figure>
-  <img src="{{site.baseurl}}/images/2017/05/03/5.jpg" alt="Sketching with my team. Ben, me and Kristine (back), Sonali and Maria (front)" />
+  <img src="{{ site.github.baseurl }}/images/2017/05/03/5.jpg" alt="Sketching with my team. Ben, me and Kristine (back), Sonali and Maria (front)" />
   <figcaption>Sketching with my team. Ben, me and Kristine (back), Sonali and Maria (front)</figcaption>
 </figure>
 
@@ -74,14 +74,14 @@ Then we all individually took notes on what aspects of the research seemed most 
 The way we did the "Deciding" day started with the voting process described in that link above, in "Day 2". Everyone got a few stickers to identify interesting points in the sketches we had come up with, and then The Decider had sort of the overall vote for what we we would go.
 
 <figure>
-  <img src="{{site.baseurl}}/images/2017/05/03/1.jpg" alt="photo of dot-stickers used to represent votes from participants" />
+  <img src="{{ site.github.baseurl }}/images/2017/05/03/1.jpg" alt="photo of dot-stickers used to represent votes from participants" />
   <figcaption>Votes on our customer journey map</figcaption>
 </figure>
 
 In all honesty, we sort of sped through this part of the process in the workshop. In my team in the workshop, I think in part because this was a low-stakes environment, so there wasn't really as much conflict as you might expect in a real team where a real product and real career decisions are in play. I think the conflict gathering thing mentioned in the [GV blog](https://library.gv.com/the-product-design-sprint-decide-day-3-7d4804bd2fd1#d8e7) is an interesting one, I'd like to try it on my team.
 
 <figure>
-  <img src="{{site.baseurl}}/images/2017/05/03/3.jpg" alt="photo of my hand-drawn phone screen wireframe" />
+  <img src="{{ site.github.baseurl }}/images/2017/05/03/3.jpg" alt="photo of my hand-drawn phone screen wireframe" />
   <figcaption>My three-screen idea</figcaption>
 </figure>
 
@@ -94,7 +94,7 @@ This is, unsurprisingly I think, the day that was the most straightforward to me
 We recapped the decisions we had made the previous day (i.e., about 20min previously) and started sketching out our ideas on the board.
 
 <figure>
-  <img src="{{site.baseurl}}/images/2017/05/03/4.jpg" alt="photo of a large hand-drawn prototype on an easel" />
+  <img src="{{ site.github.baseurl }}/images/2017/05/03/4.jpg" alt="photo of a large hand-drawn prototype on an easel" />
   <figcaption>An early sketch of our team's prototype</figcaption>
 </figure>
 
@@ -107,7 +107,7 @@ It was a real mad rush to build the prototype, as we only had 2 hours total! Obv
 Since the workshop was compressed into 2 days of teaching and trying, days 3-5 were all on the same day for us. Day 5 was the culmination of everyhing?when we brought in some folks to user test our prototype. We were able to get some people from Alpha Experience to come in to test our prototypes for us.
 
 <figure>
-  <img src="{{site.baseurl}}/images/2017/05/03/6.jpg" alt="screenshot from our InVision prototype" />
+  <img src="{{ site.github.baseurl }}/images/2017/05/03/6.jpg" alt="screenshot from our InVision prototype" />
   <figcaption>My team's prototype</figcaption>
 </figure>
 

@@ -3,7 +3,7 @@
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <div class="site-title"><a rel="author" href="{{site.baseurl}}/">{{ site.title | escape }}</a></div>
+    <div class="site-title"><a rel="author" href="{{ site.github.baseurl }}/">{{ site.title | escape }}</a></div>
 
     {%- if page_paths -%}
       {%- for path in page_paths -%}
@@ -23,7 +23,7 @@
               {%- for path in page_paths -%}
                 {%- assign post = site.pages | where: "path", path | first -%}
                 {%- if post.title and post.nav -%}
-                  <a class="page-link" href="{{site.baseurl}}{{ post.url }}">{{ post.title | escape }}</a>
+                  <a class="page-link" href="{{ site.github.baseurl }}{{ post.url }}">{{ post.title | escape }}</a>
                 {%- endif -%}
               {%- endfor -%}
             </div>

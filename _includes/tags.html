@@ -2,7 +2,7 @@
   <div id="tags" class="post-meta tags">
     <p class="title">Topics</p>
     {% for tag in page.tags %}
-      <a class="tag" href="{{site.baseurl}}/tag/{{tag}}">{{tag}}</a>
+      <a class="tag" href="{{ site.github.baseurl }}/tag/{{tag}}">{{tag}}</a>
     {% endfor %}
   </div>
 {%- endif -%}

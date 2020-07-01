@@ -18,7 +18,7 @@ So, we needed some real stuff. We needed accounts. We needed persistent data. We
 The placeholder logo I made was really just a brand color + concept mashup. I took the FontAwesome icon for a desktop computer screen, and put the FontAwesome icon for a cloud over it. I made the frame of the screen and the cloud both our accent/link/button color, and called it a day. It suggested cloud-based display or presentation, and it matched the colors we used on the site. I shipped it and moved on to other concerns.
 
 <figure>
-  <img src="{{site.baseurl}}/images/2018/09/07/placeholder.jpg" alt="the original placeholder prsnt.app logo" />
+  <img src="{{ site.github.baseurl }}/images/2018/09/07/placeholder.jpg" alt="the original placeholder prsnt.app logo" />
   <figcaption>the original placeholder prsnt.app logo</figcaption>
 </figure>
 
@@ -38,7 +38,7 @@ I knew we needed the new logo to have some important characteristics:
 So I set to work in sketch. I'd toyed a lot of times in the past with typography design, so I was naturally drawn to try making a logo font for prsnt. I tried to limit myself to primitive shapes: circles, rectangles and triangles only.
 
 <figure>
-  <img src="{{site.baseurl}}/images/2018/09/07/logo-design-process.jpg" alt="screenshot of the Sketch design file for the prsnt.app logo" />
+  <img src="{{ site.github.baseurl }}/images/2018/09/07/logo-design-process.jpg" alt="screenshot of the Sketch design file for the prsnt.app logo" />
   <figcaption>my design file for the new prsnt.app logo</figcaption>
 </figure>
 
@@ -51,12 +51,12 @@ I decided to explore the possibilities of purple (see the furthest right column)
 In the end, I went with the second column from the left. the inverted horseshoe that makes the collar of the "n" still creates a physics-defying color combination with its stem; red + blue still doesn't make green. But I wanted to leave it like this for a few reasons. First, as I mentioned above, I wanted to only use primary colors. Second, I felt that the balance of colors was better when I used red for the collar of the "n," because otherwise it would only be present in the counter of the "p" and the top curve of the "s". Third (and this is sort of one of those post hoc justifications), it's sort of an implied magic. The new prsnt.app logo is defying physics!
 
 <figure>
-<img src="{{site.baseurl}}/images/2018/09/07/final-logo.jpg" alt="final prsnt.app logo" />
+<img src="{{ site.github.baseurl }}/images/2018/09/07/final-logo.jpg" alt="final prsnt.app logo" />
 <figcaption>the final logo</figcaption>
 </figure>
 
 The final logo is used as the favicon on the site, as the icon for our Chrome plugin, and as the navbar brand icon. Just the leading "p" is used in most cases, with the full logo used on the homepage in in the navbar on the site. 
 
-![screenshot showing the right-click menu item "Save to prsnt.app", with the new prsnt logo.]({{site.baseurl}}/images/2018/09/07/right-click.jpg)
+![screenshot showing the right-click menu item "Save to prsnt.app", with the new prsnt logo.]({{ site.github.baseurl }}/images/2018/09/07/right-click.jpg)
 
-![screenshot showing the prsnt.app plugin open on top of a website, mid-use.]({{site.baseurl}}/images/2018/09/07/plugin.jpg)
+![screenshot showing the prsnt.app plugin open on top of a website, mid-use.]({{ site.github.baseurl }}/images/2018/09/07/plugin.jpg)

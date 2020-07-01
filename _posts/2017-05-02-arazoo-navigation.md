@@ -51,7 +51,7 @@ You _also_ used this settings menu to edit some kinds of data:
 - workspace (i.e., folders inside a project) names
 
 <figure>
-  <img src="{{site.baseurl}}/images/2018/05/13/old-nav.png" alt="screenshot of the old nav in Arazoo" />
+  <img src="{{ site.github.baseurl }}/images/2018/05/13/old-nav.png" alt="screenshot of the old nav in Arazoo" />
   <figcaption>see that "settings" icon in the top left? That's where everything lived.</figcaption>
 </figure>
 
@@ -72,7 +72,7 @@ So when our users asked for things in our nav, we thanked them for their suggest
 We took their feedback and our observations and mocked up some solutions. For example:
 
 <figure>
-  <img src="{{site.baseurl}}/images/2018/05/13/new-nav-1.png" alt="screenshot of first rough draft of new Arazoo navigation" />
+  <img src="{{ site.github.baseurl }}/images/2018/05/13/new-nav-1.png" alt="screenshot of first rough draft of new Arazoo navigation" />
   <figcaption>the first round of design improvements</figcaption>
 </figure>
 

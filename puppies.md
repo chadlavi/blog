@@ -9,4 +9,4 @@ Welcome, weary traveller.
 
 This page has no content, so please enjoy these adorable puppies.
 
-![Adorable puppies]({{site.baseurl}}/images/puppy.jpg)
+![Adorable puppies]({{ site.github.baseurl }}/images/puppy.jpg)

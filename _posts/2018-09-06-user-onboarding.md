@@ -24,7 +24,7 @@ Our in-person sales pitch basically went like this: we told them we're working o
 For the first pass at in-app onboarding, we decided we would include a copy of that same example project in every new account. The flow would be something like this:
 
 <figure>
-  <img src="{{site.baseurl}}/images/2018/09/06/flow-1.jpg" alt="flow chart showing the first pass of user onboarding in prsnt" />
+  <img src="{{ site.github.baseurl }}/images/2018/09/06/flow-1.jpg" alt="flow chart showing the first pass of user onboarding in prsnt" />
   <figcaption>the first pass at user onboarding in prsnt</figcaption>
 </figure>
 
@@ -37,7 +37,7 @@ For another, whether or not users explored the example project, not a lot of the
 So, we decided to add a screen to onboarding that explained the basic steps of using prsnt. This screen had three steps: adding images (which included a link to get the plugin), dragging and dropping to rearrange, and saving/printing presentations. The flow was something like this:
 
 <figure>
-  <img src="{{site.baseurl}}/images/2018/09/06/flow-2.jpg" alt="flowchart showing the addition of a how-to screen in the prsnt user onboarding" />
+  <img src="{{ site.github.baseurl }}/images/2018/09/06/flow-2.jpg" alt="flowchart showing the addition of a how-to screen in the prsnt user onboarding" />
   <figcaption>onboarding flow in prsnt, now with a "how to" screen</figcaption>
 </figure>
 
@@ -52,7 +52,7 @@ So we decided to scrap the three-step "how to" page, and I quickly edited it to 
 So now the flow looked like:
 
 <figure>
-  <img src="{{site.baseurl}}/images/2018/09/06/flow-3.jpg" alt="flowchart showing the addition of a 'get the plugin' screen to the user onboarding flow of prsnt" />
+  <img src="{{ site.github.baseurl }}/images/2018/09/06/flow-3.jpg" alt="flowchart showing the addition of a 'get the plugin' screen to the user onboarding flow of prsnt" />
   <figcaption>onboarding flow in prsnt, now with a "get the plugin" screen</figcaption>
 </figure>
 
@@ -69,7 +69,7 @@ We also decided to bring people directly to this example project on signup, inst
 So, now we had a flow like this:
 
 <figure>
-  <img src="{{site.baseurl}}/images/2018/09/06/flow-4.jpg" alt="flowchart showing the user onboarding flow of prsn with a 'how to' project included" />
+  <img src="{{ site.github.baseurl }}/images/2018/09/06/flow-4.jpg" alt="flowchart showing the user onboarding flow of prsn with a 'how to' project included" />
   <figcaption>onboarding flow in prsnt, now with a "how to" project</figcaption>
 </figure>
 
@@ -82,6 +82,6 @@ So we compromised on this: we picked the top 6 things from the "how to" project,
 We also realized: if it's just two pages, we dont really need to set up a whole example project for this. So we changed it so that the first project you create in prsnt will include these two pages. Now the flow looks like this:
 
 <figure>
-  <img src="{{site.baseurl}}/images/2018/09/06/flow-5.jpg" alt="flowchart representing the end result of the onboarding reimagining process" />
+  <img src="{{ site.github.baseurl }}/images/2018/09/06/flow-5.jpg" alt="flowchart representing the end result of the onboarding reimagining process" />
   <figcaption>onboarding flow in prsnt as of September 2018</figcaption>
 </figure>

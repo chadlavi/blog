@@ -1,0 +1,692 @@
+@charset "UTF-8";
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+/**
+ * Basic styling
+ */
+body {
+  font: 400 21px/1.58 "Roboto", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  color: black;
+  background-color: white;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+@media screen and (max-width: 600px) {
+  body {
+    font: 400 15.75px/1.58 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    color: white;
+    font-weight: 400;
+    background-color: black;
+  }
+  body a, body a:visited, body a:active {
+    color: #6e6bff;
+  }
+  body code, body pre code, body .highlight {
+    background: #1a1a1a !important;
+    background-color: #1a1a1a;
+    border-color: #4d4d4d;
+  }
+  body figure figcaption {
+    color: #757575;
+  }
+  body footer.site-footer {
+    background: #0d0d0d;
+  }
+  body img {
+    filter: brightness(0.85);
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .right {
+    text-align: right;
+  }
+}
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote,
+ul, ol, dl, figure {
+  margin-bottom: 36px;
+}
+@media screen and (max-width: 600px) {
+  h1, h2, h3, h4, h5, h6,
+p, blockquote,
+ul, ol, dl, figure {
+    margin-bottom: 27px;
+  }
+}
+
+/**
+ * `main` element
+ */
+main {
+  display: block;
+  /* Default value of `display` of `main` element is 'inline' in IE 11. */
+}
+
+/**
+ * Images
+ */
+article img {
+  max-width: 100%;
+  vertical-align: middle;
+  margin: 18px auto;
+}
+
+/**
+ * Figures
+ */
+figure {
+  margin: 36px 0;
+}
+@media screen and (max-width: 600px) {
+  figure {
+    margin: 27px 0;
+  }
+}
+figure img {
+  display: block;
+  margin-bottom: 9px;
+}
+figure figcaption {
+  font-size: 15.75px;
+  color: #444;
+  text-align: center;
+  padding: 0 18px;
+}
+@media screen and (max-width: 600px) {
+  figure figcaption {
+    font-size: 11.8125px;
+  }
+}
+
+/**
+ * Lists
+ */
+ul, ol {
+  margin-left: 18px;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+}
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Roboto", Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-weight: 900;
+}
+@media screen and (max-width: 600px) {
+  h1, h2, h3, h4 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+}
+
+span#byline {
+  display: none;
+}
+
+/**
+ * Links
+ */
+a {
+  border-radius: 3px;
+  color: #5551ff;
+  text-decoration: none;
+}
+a:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 5px #5551ff;
+}
+a:visited, a:active {
+  color: #3c38ff;
+}
+a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
+a:hover:focus {
+  color: #5551ff;
+  text-decoration: none;
+}
+a.tag {
+  display: inline-block;
+  padding: 3px 9px;
+  margin: 0 3px 7px 0;
+  color: white;
+  background: #5551ff;
+  border-radius: 4px;
+}
+a.tag:active {
+  color: white;
+  background: #3c38ff;
+}
+a.tag:hover {
+  text-decoration: none;
+  transform: translateY(-2px);
+  color: white;
+}
+a.tag:hover:focus {
+  color: white;
+}
+a[target=_blank]::after {
+  content: " [↗]";
+}
+
+.site-footer a img {
+  vertical-align: middle;
+}
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  color: #444;
+  border-left: 4px solid #e8e8e8;
+  padding-left: 18px;
+  font-size: 23.3333333333px;
+}
+@media screen and (max-width: 600px) {
+  blockquote {
+    font-size: 17.5px;
+  }
+}
+blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+/**
+ * Code formatting
+ */
+p > code {
+  display: inline-block;
+}
+
+pre,
+code {
+  font-size: 18.6666666667px;
+  border: 2px solid #e8e8e8;
+  border-radius: 4px;
+  background-color: #f9f9fb;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+@media screen and (max-width: 600px) {
+  pre,
+code {
+    font-size: 14px;
+  }
+}
+
+code {
+  padding: 1px 5px;
+}
+
+pre {
+  margin: 36px auto;
+  border-radius: 8px;
+  padding: 8px 12px;
+  overflow-x: auto;
+}
+@media screen and (max-width: 600px) {
+  pre {
+    margin: 27px auto;
+  }
+}
+pre > code {
+  border: 0;
+  padding-right: 0;
+  padding-left: 0;
+  background-color: unset;
+}
+
+/**
+ * Wrapper
+ */
+.wrapper {
+  max-width: -webkit-calc(752px - (36px * 2));
+  max-width: calc(752px - (36px * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 36px;
+  padding-left: 36px;
+}
+@media screen and (max-width: 800px) {
+  .wrapper {
+    max-width: -webkit-calc(752px - (36px));
+    max-width: calc(752px - (36px));
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+}
+
+/**
+ * Clearfix
+ */
+.footer-col-wrapper:after, .wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/**
+ * Icons
+ */
+.svg-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  fill: #444;
+  padding-right: 5px;
+}
+
+.social-media-list li + li {
+  padding-top: 5px;
+}
+.social-media-list a {
+  padding: 4px 9px;
+  margin-left: -4px;
+}
+
+/**
+ * Tables
+ */
+table {
+  margin-bottom: 36px;
+  width: 100%;
+  text-align: left;
+  color: #2e2e2e;
+  border-collapse: collapse;
+  border: 1px solid #e8e8e8;
+}
+table tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+table th, table td {
+  padding: 12px 18px;
+}
+table th {
+  background-color: #efefef;
+  border: 1px solid #dedede;
+  border-bottom-color: #c9c9c9;
+}
+table td {
+  border: 1px solid #e8e8e8;
+}
+
+/**
+ * Site header
+ */
+.site-header {
+  min-height: 67.14px;
+  position: relative;
+}
+
+.site-title {
+  line-height: 74.655px;
+  margin-bottom: 0;
+  float: left;
+}
+
+.site-nav {
+  float: right;
+  line-height: 74.655px;
+}
+.site-nav .nav-trigger {
+  display: none;
+}
+.site-nav .menu-icon {
+  display: none;
+}
+.site-nav .page-link {
+  line-height: 1.58;
+  text-decoration: none;
+}
+.site-nav .page-link, .site-nav .page-link:visited {
+  color: #5551ff;
+}
+.site-nav .page-link:not(:last-child) {
+  margin-right: 20px;
+}
+.site-nav .page-link:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+@media screen and (max-width: 600px) {
+  .site-nav {
+    position: absolute;
+    top: 9px;
+    right: 18px;
+    background-color: white;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    text-align: right;
+  }
+  .site-nav label[for=nav-trigger] {
+    display: block;
+    float: right;
+    width: 36px;
+    height: 36px;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .site-nav .menu-icon {
+    display: block;
+    float: right;
+    width: 36px;
+    height: 26px;
+    line-height: 0;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .site-nav .menu-icon > svg {
+    fill: #353535;
+  }
+  .site-nav input ~ .trigger {
+    clear: both;
+    display: none;
+  }
+  .site-nav input:checked ~ .trigger {
+    display: block;
+    padding-bottom: 5px;
+  }
+  .site-nav .page-link {
+    display: block;
+    padding: 5px 10px;
+    margin-left: 20px;
+  }
+  .site-nav .page-link:not(:last-child) {
+    margin-right: 0;
+  }
+}
+
+.tags {
+  margin-top: 72px;
+}
+@media screen and (max-width: 600px) {
+  .tags {
+    margin-top: 54px;
+  }
+}
+.tags .title {
+  font-size: 90%;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  margin-bottom: 4.5px;
+  text-transform: uppercase;
+}
+
+/**
+ * Site footer
+ */
+.site-footer {
+  font-size: 15.75px;
+  padding: 72px 0 0 0;
+  margin-top: 72px;
+  background: black;
+  color: white;
+}
+@media screen and (max-width: 600px) {
+  .site-footer {
+    font-size: 11.8125px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .site-footer {
+    padding: 54px 0 0 0;
+    margin-top: 54px;
+  }
+}
+.site-footer a, .site-footer a:visited {
+  color: #6e6bff;
+}
+.site-footer a:focus, .site-footer a:visited:focus {
+  box-shadow: 0 0 0 2px white, 0 0 0 5px #6e6bff;
+}
+
+.footer-heading {
+  font-size: 21px;
+  margin-bottom: 18px;
+}
+@media screen and (max-width: 600px) {
+  .footer-heading {
+    font-size: 15.75px;
+  }
+}
+
+.contact-list,
+.social-media-list {
+  list-style: none;
+  margin: 0;
+}
+
+.footer-col-wrapper {
+  margin-left: -18px;
+}
+
+.footer-col {
+  float: left;
+  margin-bottom: 18px;
+  padding-left: 18px;
+}
+.footer-col p {
+  margin-bottom: 0;
+}
+
+.footer-col-1 {
+  width: -webkit-calc(40% - (36px / 2));
+  width: calc(40% - (36px / 2));
+}
+
+.footer-col-2 {
+  width: -webkit-calc(60% - (36px / 2));
+  width: calc(60% - (36px / 2));
+  color: #757575;
+}
+
+@media screen and (max-width: 800px) {
+  .footer-col-1,
+.footer-col-2 {
+    width: -webkit-calc(50% - (36px / 2));
+    width: calc(50% - (36px / 2));
+  }
+
+  .footer-col-3 {
+    width: -webkit-calc(100% - (36px / 2));
+    width: calc(100% - (36px / 2));
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer-col {
+    float: none;
+    width: -webkit-calc(100% - (36px / 2));
+    width: calc(100% - (36px / 2));
+  }
+}
+/**
+ * Page content
+ */
+.page-content {
+  flex: 1;
+}
+
+.page-heading {
+  font-size: 42px;
+}
+@media screen and (max-width: 600px) {
+  .page-heading {
+    font-size: 31.5px;
+  }
+}
+
+.post-list-heading {
+  font-size: 36.75px;
+}
+@media screen and (max-width: 600px) {
+  .post-list-heading {
+    font-size: 27.5625px;
+  }
+}
+
+.post-list {
+  margin: 36px 0;
+  list-style: none;
+}
+.post-list > li {
+  margin-bottom: 36px;
+}
+
+.post-meta {
+  font-size: 15.75px;
+  color: #757575;
+}
+@media screen and (max-width: 600px) {
+  .post-meta {
+    font-size: 11.8125px;
+  }
+}
+
+.post-link {
+  margin-bottom: 0;
+  line-height: 1;
+  font-size: 129%;
+  font-family: inherit;
+  font-weight: 400;
+}
+.post-link a:focus {
+  display: inline-block;
+}
+
+/**
+ * Posts
+ */
+.post-header {
+  margin-bottom: 36px;
+}
+
+.post-title {
+  font-size: 52.5px;
+  letter-spacing: -1px;
+  line-height: 1;
+  margin-bottom: 9px;
+}
+@media screen and (max-width: 600px) {
+  .post-title {
+    font-size: 39.375px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .post-title {
+    font-size: 47.25px;
+  }
+}
+@media screen and (max-width: 800px) and (max-width: 600px) {
+  .post-title {
+    font-size: 35.4375px;
+  }
+}
+
+.post-content {
+  margin-bottom: 36px;
+}
+.post-content h2 {
+  font-size: 31.5px;
+}
+@media screen and (max-width: 600px) {
+  .post-content h2 {
+    font-size: 23.625px;
+  }
+}
+.post-content * + h2, .post-content * + h3, .post-content * + h4, .post-content h2:first-child {
+  margin: 54px 0 9px 0;
+}
+@media screen and (max-width: 600px) {
+  .post-content * + h2, .post-content * + h3, .post-content * + h4, .post-content h2:first-child {
+    margin: 40.5px 0 6.75px 0;
+  }
+}
+.post-content h3 {
+  font-size: 26.25px;
+}
+@media screen and (max-width: 600px) {
+  .post-content h3 {
+    font-size: 19.6875px;
+  }
+}
+.post-content h4 {
+  font-size: 23.1px;
+}
+@media screen and (max-width: 600px) {
+  .post-content h4 {
+    font-size: 17.325px;
+  }
+}
+.post-content iframe {
+  max-width: 100%;
+}
+.post-content li {
+  margin-bottom: 9px;
+}
+.post-content li li:first-child {
+  margin-top: 9px;
+}
+
+/* fix for github embed */
+.gist .blob-code, .gist .blob-num {
+  background: white !important;
+}
+
+@import 'highlighting.css';
+@import 'print.css' print;

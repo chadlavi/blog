@@ -50,7 +50,7 @@ cache:
 It reduced my total build times from an average of 3 minutes 20 seconds to an average of 45 seconds, or about four times faster.
 
 <figure>
-  <img src="{{site.baseurl}}/images/faster-builds.png" alt="screenshot showing two markedly different build times; 3 minutes and 28 seconds before this change, versus 46 seconds after." />
+  <img src="{{ site.github.baseurl }}/images/faster-builds.png" alt="screenshot showing two markedly different build times; 3 minutes and 28 seconds before this change, versus 46 seconds after." />
   <figcaption>The <a href="https://travis-ci.org/chadlavi/blog/builds/605132241">last build before the change</a> had an install time of 153.21 seconds; the <a href="https://travis-ci.org/chadlavi/blog/builds/605134945">first build after the change</a> had an install time of <i>0.38 seconds</i>. That's roughly 400 times faster.</figcaption>
 </figure>
 

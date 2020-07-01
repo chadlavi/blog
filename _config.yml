@@ -4,7 +4,6 @@ description: >-
   Design engineer, library maintainer. Formerly freelance, currently design
   system and frontend component library maintainer at
   [Casebook](https://casebook.net).
-baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: chadlavimoniere
 github_username:  chadlavi
