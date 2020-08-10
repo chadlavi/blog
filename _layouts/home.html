@@ -2,15 +2,9 @@
 layout: default
 ---
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
-  {{ content }}
-
+<article>
   {%- if site.posts.size > 0 -%}
-    <h1 class="post-title">{{ page.list_title | default: "Posts" }}</h1>
+    <h1 class="post-title"><i>{{ page.list_title | default: "Posts" }}</i></h1>
     <ul class="post-list">
       {% assign sorted-posts = site.posts | sort: 'date' | reverse %}
       {%- for post in sorted-posts -%}
@@ -34,6 +28,5 @@ layout: default
       </li>
       {%- endfor -%}
     </ul>
-  {%- endif -%}
-
-</div>
+{%- endif -%}
+</article>

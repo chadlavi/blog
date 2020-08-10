@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  Turning github into a CMS with Jekyll and Travis-CI
+title:  Turning github into a CMS
 date:   2019-10-30
-# updated: 2019-01-02b
+# updated: 2020-08-09
 tags:
 - jekyll
 - markdown

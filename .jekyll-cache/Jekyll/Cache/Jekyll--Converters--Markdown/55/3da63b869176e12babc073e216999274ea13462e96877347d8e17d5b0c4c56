@@ -1,0 +1,2 @@
+I"�<p>I originally created this blog as an excuse to experiment with <a href="https://jamstack.org/">the JAM stack</a>, but I quickly realized I didn’t really need any CRUD functionality; it’s just a blog, no forms or uploads to speak of. The initial code for that never made it to a git repo, and frankly didn’t get too far past an <code class="highlighter-rouge">npx create-react-app</code>.</p>
+:ET

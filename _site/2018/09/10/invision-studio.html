@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/print.css" media="print">
+  <script src="/assets/script.js" defer></script>
+  <script src="https://kit.fontawesome.com/34ff4b035e.js" crossorigin="anonymous"></script><link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="Chad Lavimoniere" /></head><body><nav class="wrapper">
+  <div class="site-title"><a rel="author" href="/">Chad Lavimoniere</a></div>
+</nav>
+<main class="page-content" aria-label="Content">
+      <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Prototyping with InVision Studio</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2018-09-10T00:00:00-04:00" itemprop="datePublished">Sep 10, 2018
+      </time><span id="byline"> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Chad Lavimoniere</span></span></span>
+        
+    </p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><em>Note: InVision Studio prototypes currently are not supported on macs with Intel HD 4000 GPUs (<a href="https://support.apple.com/en-us/HT204349#intelhd">most 2012-2013 models</a>). This is a <a href="https://support.invisionapp.com/hc/en-us/community/posts/360014933931/comments/360001806692">known issue with InVision</a>. If you attempt to view the following prototypes on an affected mac, you’ll likely get a garbled, unintelligible screen.</em></p>
+
+<p>…</p>
+
+<p>I’ve been a big fan of InVision since I first started using their web app in 2014; so when I caught wind of a beta desktop design app they were planning to release back in 2017, I immediately jumped onboard. I got access to InVision Studio in January 2018.</p>
+
+<p>Most of the work I’ve done in 2018 has been experimental/direct building, so I’ve only had a few opportunities to use InVision Studio to prototype.</p>
+
+<h2 id="document-explorer">Document Explorer</h2>
+
+<p>My team started work on a document exploration app for architectural drawing sets in May of this year. The app would allow architects and designers to upload individual drawing files and tag them, then allow the consumers of their drawing sets (contractors, subcontractors, engineers, clients) to interactively make sets of <em>just the drawings they needed</em>. This was an attempt to solve a longstanding problem with physical drawing sets produced in architecture today: the designs relevant to one person’s work are scattered throughout the document set, which is often hundreds of pages long. Finding all the drawings you need, and comparing/contrasting drawings that are far away from each other, is a constant struggle.</p>
+
+<p>This product unforunately ended up getting shelved; there was a rights disagreement between the idea’s originator and our company ownership, and they parted ways.</p>
+
+<p>But my initial MVP prototype still exists. In this prototype, you can create a project, simulate uploading images in bulk and tagging them, then filter your new project on those tags.</p>
+
+<p><a href="https://projects.invisionapp.com/prototype/mvp-flow-cjhkmosiq00coo201mzehj69x/play/39763228"><img src="http://chadlavimoniere.com/images/2018/09/prototyping/planit-mvp.jpg" alt="Architectural Document Explorer MVP" /></a></p>
+
+<h2 id="tile-resizing-demo">Tile Resizing Demo</h2>
+
+<p>In our initial version of <a href="https://prsnt.app">prsnt.app</a>, we had a fixed layout of three tiles per page, which flowed onto as many pages as needed. In part, this was because the users we initially talked to about presentation were highly technical. For them, the image was secondary, or perhaps even tertiary; it was included more as a visual reference to anchor the technical information than as a piece of presentation/decision making per se. We quickly realized that this wasn’t a majority use case; interior designers and decorators generally give presentations that are more akin to collages than specifications, and for them the ability to add more images to the page and lay them out beautifully was a must-have.</p>
+
+<p>My colleague Peter and I had a long discussion one day about how to solve this. How could we let users add a varying number of items to the page while still making sure the page flow was controlled, and the user could accurately predict how many items would be on the page?</p>
+
+<p>It occured to me that we could take the length of the list of items added to a given page, then change the layout of the page based on that length; basically, we would bootstrap ourselves some responsive layouts based on item count.</p>
+
+<p>This is the quick demonstration I made to illustrate that concept to Peter and our developers. In this demo, you can click the “Add Tile” button to simulate dragging and dropping a new image onto the page; the tiles on the page will adjust to accommodate the new tile. For layouts of 3+ tiles, you can also click the +/- button on the first tile to make it fullheight. This yields a total of 14 different layouts for 8 tiles.</p>
+
+<p><a href="https://projects.invisionapp.com/prototype/11x17-layout-cjj1rnjl5003mem01w34vnx28/play/3aadbc7e"><img src="http://chadlavimoniere.com/images/2018/09/prototyping/prsnt-tile-exploration.jpg" alt="Tile Resizing Demo" /></a></p>
+
+<p>The basic mechanics of this demonstration are still at the heart of our layout engine in prsnt.app, though we’ve extended and refined it since its inception.</p>
+
+  </div>
+
+  <a class="u-url" href="/2018/09/10/invision-studio.html" hidden></a>
+</article>
+<footer>
+  <div class="footer-description"><p>Chad Lavimoniere is a Design engineer, currently maintaining an in-house design system and frontend component libraries at <a href="https://casebook.net">Casebook</a>.</p>
+</div><ul class="social-media-list"><li><i class="fab fa-github"></i> <a href="https://github.com/chadlavi"><span class="username">chadlavi</span></a></li><li><i class="fab fa-github"></i> <a href="https://github.com/chadlavi-casebook"><span class="username">chadlavi-casebook</span></a></li><li><i class="fab fa-twitter"></i> <a href="https://www.twitter.com/chadlavimoniere"><span class="username">chadlavimoniere</span></a></li><li><i class="fas fa-rss"></i> <a href="/feed.xml" target="_blank"><span>RSS</span></a></li></ul>
+</footer>
+</main>
+
+
+  </body>
+
+</html>

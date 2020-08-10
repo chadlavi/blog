@@ -57,7 +57,7 @@ You _also_ used this settings menu to edit some kinds of data:
 
 It was... sort of a mess. There was a huge amount of importance placed on that one affordance, and a mix of navigational and functional features.
 
-##Fixing it, part one: talking to users
+## Fixing it, part one: talking to users
 
 One major difference was that for the first time, we _went to talk to users about it_. Our users told us what we already observed from FullStory: the nav was confusing. But more importantly, they told us how it confused them; they let us watch them get confused; and they asked for things.
 

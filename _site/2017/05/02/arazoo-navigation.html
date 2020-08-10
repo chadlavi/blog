@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/print.css" media="print">
+  <script src="/assets/script.js" defer></script>
+  <script src="https://kit.fontawesome.com/34ff4b035e.js" crossorigin="anonymous"></script><link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="Chad Lavimoniere" /></head><body><nav class="wrapper">
+  <div class="site-title"><a rel="author" href="/">Chad Lavimoniere</a></div>
+</nav>
+<main class="page-content" aria-label="Content">
+      <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Rebuilding sitewide navigation in Arazoo</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2017-05-02T00:00:00-04:00" itemprop="datePublished">May 2, 2017
+      </time><span id="byline"> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Chad Lavimoniere</span></span></span>
+        
+    </p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Hiring our new CTO, Peter Stern, back in early 2017 was an excellent opportunity for us at Arazoo to reexamine some of the design decisions that were made early on but were no longer carrying their weight. Peter was fresh to our org and had no emotional ties to our existing code. Whereas I’d had problems in the past getting user testing and user experience at the front of the process, Pete naturally gravitated towards the “let’s go talk to people” side of things.</p>
+
+<h2 id="too-much-execution-not-enough-learning">Too much execution, not enough learning</h2>
+
+<p>Because we had been working in “execution” mode rather than in a “lean” learning-oriented way, our product had become sort of a palimpsest of compromises. We wanted to build Large Featureset X, but technical limitations, time (that is, budget) limitations, or both meant we built Y, which is sort of like X, but with fewer features. Meanwhile, we didn’t run any of this by our users or even think about the notion of what an MVP of that solution might really look like.</p>
+
+<p>Then in a subsequent sprint, we would manage to add some more of X to Y. Along the way, someone might have an idea elsewhere that has design ramificaitons that ripple throughout the product. What we wanted to be X, and built as Y, now becomes Z. It’s <em>okay</em>, but it’s a feature that was born from outside constraints rather than purpose-built to serve a user need.</p>
+
+<p>And more importantly, it’s not really something we ever tested on users, or even built because they said they needed it.</p>
+
+<p>Navigation in the Arazoo web app had been one of these <del>X</del> <del>Y</del> Z features.</p>
+
+<p>In the original MVP that was developed for our founders by consultants, the feature set was small enough and the data scarce enough that navigation was able to be functional and superficial at the same time. There were only a couple different things you could do: Be on your firm homepage, go into a project, create a product, and invite new users.</p>
+
+<p>As the features in Arazoo grew and gained complexity, navigation was scaled to accommodate it. More and more functionality (even editing some kinds of data) were squeezed into the nav.</p>
+
+<p>We found from session playback in FullStory that users were often confused by our navigation. They weren’t able to get to the features that could help them, so they would just give up and abandon.</p>
+
+<p>At the time, there were a few major things in Arazoo that a user could access:</p>
+
+<ul>
+  <li>the “Global Library,” a collection of all the public products all Arazoo users had saved from the web. It had category-based subnavigation.</li>
+  <li>the “Firm”, a user’s team. This had a few subnav items as well:
+    <ul>
+      <li>the “Firm Library” was the collection of that firm’s products</li>
+      <li>the “Firm Projects” page, where that firm’s projects (collections of products that will be used together for a construction project) were gathered.</li>
+    </ul>
+  </li>
+  <li>the “Personal Library,” a user’s personal list of products</li>
+</ul>
+
+<p>In addition to these, we had various marketing pages:</p>
+
+<ul>
+  <li>the homepage</li>
+  <li>the pricing page</li>
+  <li>a team page</li>
+  <li>a product explainer page</li>
+  <li>a link to our FAQs</li>
+</ul>
+
+<p>All of the above items were packed into <em>one settings menu</em> in Arazoo at the time. We had a top nav bar that displayed the breadcrumb for your current page, and you used this settings menu to hop to different places.</p>
+
+<p>You <em>also</em> used this settings menu to edit some kinds of data:</p>
+
+<ul>
+  <li>your user display name and image</li>
+  <li>your firm’s display name and image</li>
+  <li>project names</li>
+  <li>workspace (i.e., folders inside a project) names</li>
+</ul>
+
+<figure>
+  <img src="/images/2018/05/13/old-nav.png" alt="screenshot of the old nav in Arazoo" />
+  <figcaption>see that "settings" icon in the top left? That's where everything lived.</figcaption>
+</figure>
+
+<p>It was… sort of a mess. There was a huge amount of importance placed on that one affordance, and a mix of navigational and functional features.</p>
+
+<h2 id="fixing-it-part-one-talking-to-users">Fixing it, part one: talking to users</h2>
+
+<p>One major difference was that for the first time, we <em>went to talk to users about it</em>. Our users told us what we already observed from FullStory: the nav was confusing. But more importantly, they told us how it confused them; they let us watch them get confused; and they asked for things.</p>
+
+<p>People like to toss around that old Henry Ford quote:</p>
+
+<blockquote>
+  <p>If I had asked people what they wanted, they’d have asked for a faster horse.</p>
+</blockquote>
+
+<p>But honestly: yes. It’s not terrible if people ask you for a faster horse, as long as you can ask some <em>whys</em> to get to the bottom of it. People ask for a faster horse because they want to go faster, and they’re used to horses. It’s the going faster you need to solve.</p>
+
+<p>So when our users asked for things in our nav, we thanked them for their suggestions then asked them <em>why they wanted that</em>. And generally it was all about orientation. Our users wanted to know where the heck they were in our site. The wanted to be able to quickly intuit how to get from one place to another.</p>
+
+<p>We took their feedback and our observations and mocked up some solutions. For example:</p>
+
+<figure>
+  <img src="/images/2018/05/13/new-nav-1.png" alt="screenshot of first rough draft of new Arazoo navigation" />
+  <figcaption>the first round of design improvements</figcaption>
+</figure>
+
+<p>In this early mockup, I did several things:</p>
+<ul>
+  <li>moved the settings icon to the right, where people expect settings stuff to be</li>
+  <li>gave four obvious navigational anchors:
+    <ul>
+      <li>the brand icon takes you to the homepage</li>
+      <li>Products goes to the All Products page (we rebranded the “Global Library” because… well, “All Products” is what it actually contains)</li>
+      <li>Libraries is a dropdown with all the libraries you have access to</li>
+      <li>Projects is a dropdown with all the projects you have access to</li>
+    </ul>
+  </li>
+  <li>a secondary nav bar is there to hold in-page search and sorting</li>
+  <li>knowing where you are is handled with an underline on the top-level bucket you’re in, plus an H1 on the page</li>
+</ul>
+
+<p>We got some positive feedback on this one when we shopped it around to users as just a static image, but they pointed out that this was focused entirely on the app, and didn’t really address the need or desire to check out the static marketing pages.</p>
+
+  </div>
+
+  <a class="u-url" href="/2017/05/02/arazoo-navigation.html" hidden></a>
+</article>
+<footer>
+  <div class="footer-description"><p>Chad Lavimoniere is a Design engineer, currently maintaining an in-house design system and frontend component libraries at <a href="https://casebook.net">Casebook</a>.</p>
+</div><ul class="social-media-list"><li><i class="fab fa-github"></i> <a href="https://github.com/chadlavi"><span class="username">chadlavi</span></a></li><li><i class="fab fa-github"></i> <a href="https://github.com/chadlavi-casebook"><span class="username">chadlavi-casebook</span></a></li><li><i class="fab fa-twitter"></i> <a href="https://www.twitter.com/chadlavimoniere"><span class="username">chadlavimoniere</span></a></li><li><i class="fas fa-rss"></i> <a href="/feed.xml" target="_blank"><span>RSS</span></a></li></ul>
+</footer>
+</main>
+
+
+  </body>
+
+</html>
