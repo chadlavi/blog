@@ -3,6 +3,11 @@
  * Syntax highlighting styles
  */
 
+ :root {
+   --code-red: #f8255a;
+   --code-teal: #1aa3d1;
+ }
+
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
@@ -23,9 +28,6 @@
   width: auto;
 }
 
- .highlighter-rouge .highlight {
-  background: #fefefe;
-}
 .highlight .c {
   color: #6c6c6c;
   font-style: italic;
@@ -117,20 +119,20 @@
   color: #099;
 }
 .highlight .s {
-  color: #d21141;
+  color: var(--code-red);
 }
 .highlight .na {
-  color: #007298;
+  color: var(--code-teal);
 }
 .highlight .nb {
-  color: #007298;
+  color: var(--code-teal);
 }
 .highlight .nc {
   color: #458;
   font-weight: bold;
 }
 .highlight .no {
-  color: #007298;
+  color: var(--code-teal);
 }
 .highlight .ni {
   color: #800080;
@@ -150,7 +152,7 @@
   color: #000080;
 }
 .highlight .nv {
-  color: #007298;
+  color: var(--code-teal);
 }
 .highlight .ow {
   font-weight: bold;
@@ -171,34 +173,34 @@
   color: #099;
 }
 .highlight .sb {
-  color: #d21141;
+  color: var(--code-red);
 }
 .highlight .sc {
-  color: #d21141;
+  color: var(--code-red);
 }
 .highlight .sd {
-  color: #d21141;
+  color: var(--code-red);
 }
 .highlight .s2 {
-  color: #d21141;
+  color: var(--code-red);
 }
 .highlight .se {
-  color: #d21141;
+  color: var(--code-red);
 }
 .highlight .sh {
-  color: #d21141;
+  color: var(--code-red);
 }
 .highlight .si {
-  color: #d21141;
+  color: var(--code-red);
 }
 .highlight .sx {
-  color: #d21141;
+  color: var(--code-red);
 }
 .highlight .sr {
   color: #009926;
 }
 .highlight .s1 {
-  color: #d21141;
+  color: var(--code-red);
 }
 .highlight .ss {
   color: #990073;
@@ -207,13 +209,13 @@
   color: #999;
 }
 .highlight .vc {
-  color: #007298;
+  color: var(--code-teal);
 }
 .highlight .vg {
-  color: #007298;
+  color: var(--code-teal);
 }
 .highlight .vi {
-  color: #007298;
+  color: var(--code-teal);
 }
 .highlight .il {
   color: #099;

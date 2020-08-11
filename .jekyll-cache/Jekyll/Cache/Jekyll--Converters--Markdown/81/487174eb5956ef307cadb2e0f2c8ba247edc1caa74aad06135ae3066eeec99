@@ -1,29 +1,4 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/highlighting.css">
-  <link rel="stylesheet" href="/css/print.css" media="print">
-  <script src="/assets/script.js" defer></script>
-  <script src="https://kit.fontawesome.com/34ff4b035e.js" crossorigin="anonymous"></script><link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="Chad Lavimoniere" /></head><body><nav class="wrapper">
-  <div class="site-title"><a rel="author" href="/">Chad Lavimoniere</a></div>
-</nav>
-<main class="page-content" aria-label="Content">
-      <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Turning github into a CMS</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="2019-10-30T00:00:00-04:00" itemprop="datePublished">Oct 30, 2019
-      </time><span id="byline"> • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">Chad Lavimoniere</span></span></span>
-        
-    </p>
-  </header>
-
-  <div class="post-content e-content" itemprop="articleBody">
-    <p>I originally created this blog as an excuse to experiment with <a href="https://jamstack.org/">the JAM stack</a>, but I quickly realized I didn’t really need any CRUD functionality; it’s just a blog, no forms or uploads to speak of. The initial code for that never made it to a git repo, and frankly didn’t get too far past an <code class="highlighter-rouge">npx create-react-app</code>.</p>
+I"�<p>I originally created this blog as an excuse to experiment with <a href="https://jamstack.org/">the JAM stack</a>, but I quickly realized I didn’t really need any CRUD functionality; it’s just a blog, no forms or uploads to speak of. The initial code for that never made it to a git repo, and frankly didn’t get too far past an <code class="highlighter-rouge">npx create-react-app</code>.</p>
 
 <p>I still wanted to create a fast, responsive, accessible site that’s templatized and just needs markdown changes to create new stuff. My <a href="https://github.com/chadlavi/chadlavimoniere.com">old blog</a> was an experiment in using the LAMP stack to do something sort of like this, but it was really cumbersome; I ended up storing the markdown content for the posts in a MySQL database, so it was still fairly technologically intensive to update.</p>
 
@@ -31,13 +6,13 @@
 
 <p>That’s when I realized that Jekyll and GitHub Pages would probably be a good fit for this. I’d used both at work (Jekyll for an abortive first-stab at a company-wide branding guide site; GitHub Pages to host the documentation for my component libraries), but had always used them with a workflow like this:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>develop stuff locally
-  |
-  V
-do a manual build locally
-  |
-  V
-push build artifacts to GitHub Pages
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">develop</span> <span class="nx">stuff</span> <span class="nx">locally</span>
+  <span class="o">|</span>
+  <span class="nx">V</span>
+<span class="k">do</span> <span class="nx">a</span> <span class="nx">manual</span> <span class="nx">build</span> <span class="nx">locally</span>
+  <span class="o">|</span>
+  <span class="nx">V</span>
+<span class="nx">push</span> <span class="nx">build</span> <span class="nx">artifacts</span> <span class="nx">to</span> <span class="nx">GitHub</span> <span class="nx">Pages</span>
 </code></pre></div></div>
 
 <p>It was somewhat convenient. Jekyll let me write content in markdown, which made it way more portable and way more approachable to non-tech folks. GitHub Pages is free, pretty much infrastructure-less, and well-documented. But the need to manually build then push build artifacts to a hosting environment seemed like a rough edge I could sand off.</p>
@@ -73,18 +48,4 @@ push build artifacts to GitHub Pages
 <p>I actually completely composed this blog post (and even added the image above) <em>directly in the text editor on GitHub</em>. With Travis CI set up to automatically run builds whenever new changes are committed on the master branch of this repository, I can basically treat the <em>Create new file</em> text input like it’s a markdown-specific CMS.</p>
 
 <p>I’m anticipating that this is going to mean a lot more freedom in how I can add new blog posts or edit existing ones in the future; the only thing I can’t do directly from GitHub is preview changes accurately, or change more than one file per commit. This will probably mean sort of a separation of concerns: markdown I can compose and upload from anywhere, but template or infrastructure changes will still need a more traditional dev setup.</p>
-
-  </div>
-
-  <a class="u-url" href="/2019/10/30/building-jekyll-blog.html" hidden></a>
-</article>
-<footer>
-  <div class="footer-description"><p>Chad Lavimoniere is a Design engineer, currently maintaining an in-house design system and frontend component libraries at <a href="https://casebook.net">Casebook</a>.</p>
-</div><ul class="social-media-list"><li><i class="fab fa-github"></i> <a href="https://github.com/chadlavi"><span class="username">chadlavi</span></a></li><li><i class="fab fa-github"></i> <a href="https://github.com/chadlavi-casebook"><span class="username">chadlavi-casebook</span></a></li><li><i class="fab fa-twitter"></i> <a href="https://www.twitter.com/chadlavimoniere"><span class="username">chadlavimoniere</span></a></li><li><i class="fas fa-rss"></i> <a href="/feed.xml" target="_blank"><span>RSS</span></a></li></ul>
-</footer>
-</main>
-
-
-  </body>
-
-</html>
+:ET

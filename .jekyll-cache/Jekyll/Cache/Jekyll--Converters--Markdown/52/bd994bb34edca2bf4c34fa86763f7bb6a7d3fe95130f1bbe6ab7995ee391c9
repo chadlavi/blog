@@ -1,4 +1,4 @@
-I"h<p>I originally created this blog as an excuse to experiment with <a href="https://jamstack.org/">the JAM stack</a>, but I quickly realized I didn’t really need any CRUD functionality; it’s just a blog, no forms or uploads to speak of. The initial code for that never made it to a git repo, and frankly didn’t get too far past an <code class="highlighter-rouge">npx create-react-app</code>.</p>
+I"Q<p>I originally created this blog as an excuse to experiment with <a href="https://jamstack.org/">the JAM stack</a>, but I quickly realized I didn’t really need any CRUD functionality; it’s just a blog, no forms or uploads to speak of. The initial code for that never made it to a git repo, and frankly didn’t get too far past an <code class="highlighter-rouge">npx create-react-app</code>.</p>
 
 <p>I still wanted to create a fast, responsive, accessible site that’s templatized and just needs markdown changes to create new stuff. My <a href="https://github.com/chadlavi/chadlavimoniere.com">old blog</a> was an experiment in using the LAMP stack to do something sort of like this, but it was really cumbersome; I ended up storing the markdown content for the posts in a MySQL database, so it was still fairly technologically intensive to update.</p>
 
@@ -6,13 +6,13 @@
 
 <p>That’s when I realized that Jekyll and GitHub Pages would probably be a good fit for this. I’d used both at work (Jekyll for an abortive first-stab at a company-wide branding guide site; GitHub Pages to host the documentation for my component libraries), but had always used them with a workflow like this:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>develop stuff locally
+<div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(develop stuff locally)[]
   |
   V
 do a manual build locally
   |
   V
-push build artifacts to GitHub Pages ds sd sdaf sadf asdf dfsa ads asdffas 
+push build artifacts to GitHub Pages
 </code></pre></div></div>
 
 <p>It was somewhat convenient. Jekyll let me write content in markdown, which made it way more portable and way more approachable to non-tech folks. GitHub Pages is free, pretty much infrastructure-less, and well-documented. But the need to manually build then push build artifacts to a hosting environment seemed like a rough edge I could sand off.</p>
