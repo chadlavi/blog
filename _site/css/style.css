@@ -108,6 +108,7 @@ pre {
   border: 1px solid;
   border-radius: .5em;
   background: #1a1919;
+  overflow-x: auto;
 }
 figure {
   margin: 1.5em 0;
